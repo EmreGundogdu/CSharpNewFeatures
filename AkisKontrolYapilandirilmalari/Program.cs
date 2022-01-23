@@ -44,7 +44,7 @@ namespace AkisKontrolYapilandirilmalari
             int i = 10;
             switch (i)
             {
-                case 5: 
+                case 5:
                     Console.WriteLine(i * 10);
                     break;
                 case 6:
@@ -54,7 +54,7 @@ namespace AkisKontrolYapilandirilmalari
                     //Console.WriteLine(i * 10);
                     //break;
                     Console.WriteLine(i * 10);
-                    break; 
+                    break;
                 case 10:
                     //Console.WriteLine(i * 10);
                     //break;
@@ -63,7 +63,7 @@ namespace AkisKontrolYapilandirilmalari
 
                     //case 7 :
                     //case 10 :
-                        //goto case 5; //yukarıdaki gibi gibi farklı caseler oluşturmak yerine case 7 ve case 10u bu şekilde yazıp daha sonra gidicek olan case'Yi goto ile kullanıyoruz
+                    //goto case 5; //yukarıdaki gibi gibi farklı caseler oluşturmak yerine case 7 ve case 10u bu şekilde yazıp daha sonra gidicek olan case'Yi goto ile kullanıyoruz
             }
             #endregion
             #region Switch Expression
@@ -95,7 +95,29 @@ namespace AkisKontrolYapilandirilmalari
             #endregion
             #endregion
             #region Switch Expression & When
-
+            int sayi1 = 20;
+            string isim1 = sayi1 switch
+            {
+                20 when 3 == 3 => "Emre",
+                var x when x == 7 && x % 2 == 1 => "Gündoğdu",
+                5 when 2 != 3 => "String İfade",
+                var x => "Hiçbiri" //default : Hiçbirinin olmadığı durumda default tanımlamasına karşılık gelecektir.
+            };
+            #endregion
+            #region Switch Expression & Tuple Patterns
+            int _sayi1 = 20;
+            int _sayi2 = 21;
+            string mesaj2 = "";
+            switch (_sayi1, _sayi2)
+            {
+                case (20, 21):
+                    mesaj2 = "20 ve 21 değerleri";
+                    break;
+                case (5, 10):
+                    mesaj2 = "5 ve 10 değerleri";
+                    break;
+            }
+            Console.WriteLine(mesaj2);
             #endregion
         }
     }
