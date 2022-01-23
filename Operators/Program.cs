@@ -26,7 +26,7 @@ namespace Operators
             #region (int) * (double) = ?
             //iki farklı türde sayısal değer üzerinde yapılan aritmetik işlem neticesinde sonuç olarak büyük olan türde dönecektir
             int s3 = 10;
-            double s4 = 5; //double daha büyüktür int'ten sonuç double olur
+            double s4 = 5; //double daha büyüktür int'ten ve sonuç double olur
             double sonuc5 = s3 + s4;
             #endregion
             #region (byte) + (int) = ?
@@ -36,7 +36,7 @@ namespace Operators
             #endregion
             #region (byte) + (byte) = ?
             byte x = 5;
-            byte x2 = 10; //iki byte sayısal değer ile işlem yapıldığında sonuç int çıkar
+            byte x2 = 10; //iki byte sayısal değer ile işlem yapıldığında sonuç int çıkar bu bir istisnadır
             int sonuc7 = x + x2;
             #endregion
             #region Karşılaştırma Operatörleri
@@ -75,8 +75,8 @@ namespace Operators
             bool sonuc01 = patates || kofte;
             bool sonuc02 = patates ^ kofte;
             Console.WriteLine(sonuc0);
-            Console.WriteLine(sonuc01);
-            Console.WriteLine(sonuc02);
+            Console.WriteLine(sonuc01 + " ve'nin sonucu");
+            Console.WriteLine(sonuc02 + " ya da nın sonucu");
             #endregion
             #region Mantıksal Operatörlerin Geriye Dönüş Değeri
             //ve
@@ -200,7 +200,7 @@ namespace Operators
             #endregion
             //Atama (assign) operatörü --- int a = 5;
             #region (Member Access - Üye Erişim) Operatörü (.)
-            //Mmeber Access, elimizdkei bir değerin türüne uygun elemanların/fonksiyonların/metotların/propertylerini/field erişmemizi
+            //Member Access, elimizdeki bir değerin türüne uygun elemanların/fonksiyonların/metotların/propertylerini/field erişmemizi
             //çalıştırmamızı/çağırmamızı sağlayan bir operatörü.
             //Member Access kodun devamını getirir
             int p = 5;
@@ -213,7 +213,7 @@ namespace Operators
             //3. Chat -> int | int -> char (ASCII)
             #endregion
             #region sizeOf Operatörü
-            //Verilen türün bellekte kaç bytelık yer kaplaıdğını int olarak geriye döndürür.
+            //Verilen türün bellekte kaç bytelık yer kapladığını int olarak geriye döndürür.
             Console.WriteLine("int: " + sizeof(int));
             Console.WriteLine("long: " + sizeof(long));
             Console.WriteLine("decimal: " + sizeof(decimal));

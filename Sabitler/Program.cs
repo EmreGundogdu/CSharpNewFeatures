@@ -52,7 +52,7 @@ namespace Sabitler
             #endregion
             #region dynamic keywordu
             dynamic x = 5;
-            Console.WriteLine(x * 5); //proje çalıştığında sonuç int olucaksa bunu hesaplıcak ama x'in dğerini string vermiş olsaydık proje çalıştıktan sonra ata vericekti. 
+            Console.WriteLine(x * 5); //proje çalıştığında sonuç int olucaksa bunu hesaplıcak ama x'in dğerini string vermiş olsaydık proje çalıştıktan sonra hata vericekti. 
             //Çünkü proje çalıştıktan sonra tipi string olucaktı ve int ile çarpımı mümkün olmuyacaktı
             //proje çalışana kadar bunun tipi dynamic olarak kalır 
             //dynamıc 

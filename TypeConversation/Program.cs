@@ -45,6 +45,10 @@ namespace TypeConversion
             int a = 25;
             string a2 = Convert.ToString(a);
             Console.WriteLine(a2 + "intten strinde dönüşüm");
+
+            double t5 = 3.16;
+            string t6 = Convert.ToString(t5);
+            Console.WriteLine(t6 + "");
             #endregion
             #region ToString Metodu
             float f = 35;
@@ -87,11 +91,11 @@ namespace TypeConversion
             bool q = true;
             short w = Convert.ToInt16(q); //1 değeri gelir true olduğu için- false olsaydı 0 sonucu olurdu
             Console.WriteLine(q);
-            //  mantıksal değeri herhangi bir sayısal değere conver edersek ilgili değerin sayısal değeri verilir
+            //  mantıksal değeri herhangi bir sayısal değere convert edersek ilgili değerin sayısal değeri verilir
             #endregion
             #region Sayısal türün bool türüne dönüştürülmesi
             int i = 132; //0 değeri yazılmadığı sürece bütün değerler true'dur. Bu bir istisnadır. Normalde 1 = true | 0 = false olması gerekir. Geri kalanının mümkün olmaması gerekir
-            //diğer tüm değerlerin true olması istisnadır
+            //yani 0 harici diğer tüm değerlerin true olması istisnadır
             bool i2 = Convert.ToBoolean(i);
             Console.WriteLine(i2);
             #endregion
