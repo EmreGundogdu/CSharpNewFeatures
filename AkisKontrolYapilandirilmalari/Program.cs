@@ -124,6 +124,9 @@ namespace AkisKontrolYapilandirilmalari
                 (10, 20) => "10 ve 20 değerleri"
             };
             #endregion
+            #region if
+
+            #endregion
         }
     }
 }
