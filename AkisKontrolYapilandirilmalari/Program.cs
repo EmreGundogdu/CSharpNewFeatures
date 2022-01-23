@@ -66,6 +66,34 @@ namespace AkisKontrolYapilandirilmalari
                         //goto case 5; //yukarıdaki gibi gibi farklı caseler oluşturmak yerine case 7 ve case 10u bu şekilde yazıp daha sonra gidicek olan case'Yi goto ile kullanıyoruz
             }
             #endregion
+            #region Switch Expression
+            #region Eski Yöntem
+            string isim = "";
+            int z = 10;
+            switch (z)
+            {
+                case 5:
+                    isim = "Emre";
+                    break;
+                case 7:
+                    isim = "Ahmet";
+                    break;
+                case 10:
+                    isim = "dasdas";
+                    break;
+            }
+            #endregion
+            #region Yeni Yöntem
+            int sayi = 10;
+            string isim2 = sayi switch
+            {
+                5 => "Yavuz",
+                7 => "Burak",
+                10 => "Emre"
+            };
+
+            #endregion
+            #endregion
         }
     }
 }
