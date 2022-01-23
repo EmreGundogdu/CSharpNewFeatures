@@ -118,6 +118,11 @@ namespace AkisKontrolYapilandirilmalari
                     break;
             }
             Console.WriteLine(mesaj2);
+            string mesaj3 = (_sayi1, _sayi2) switch
+            {
+                (20, 21) when (true) => "20 ve 21 değerleri",
+                (10, 20) => "10 ve 20 değerleri"
+            };
             #endregion
         }
     }
