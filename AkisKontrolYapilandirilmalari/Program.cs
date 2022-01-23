@@ -125,7 +125,16 @@ namespace AkisKontrolYapilandirilmalari
             };
             #endregion
             #region if
-
+            bool medeniHal = true;
+            if (medeniHal == true)
+            {
+                Console.WriteLine("Evlisin");
+            }
+            else
+            {
+                Console.WriteLine("Evli Değilsins");
+            }
+            //if yapılanması tek başına kullanılıyorsa sadece şarta bağlı olarak çalışacak kod odaklanır...
             #endregion
         }
     }
