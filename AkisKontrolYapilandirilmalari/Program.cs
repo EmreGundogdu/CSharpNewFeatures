@@ -288,6 +288,35 @@ namespace AkisKontrolYapilandirilmalari
             }
             #endregion
             #endregion
+            #region If Senaryo 2
+            //Belirlenen kullanıcı adı ve şifre doğru girildiğinde "Giriş Başarılı", yanlış girildiğinde "Girdiğiniz kullanıcı adı veya şifre hatalı" mesajı veren Console uygulamasını yazalım.
+            Console.WriteLine("Lütfen Kullanıcı Adını Yazınız");
+            string kullaniciAdi = Console.ReadLine();
+            Console.WriteLine("Lütfen şifrenizi giriniz");
+            string sifre = Console.ReadLine();
+            if (!(kullaniciAdi == "gndgd" && sifre == "12345"))
+                Console.WriteLine("Girdiğiniz kullanıcı adı veya şifre hatalı");
+            else
+                Console.WriteLine("Giriş Başarılı");
+
+            Console.WriteLine(kullaniciAdi == "gndg" && sifre=="12345"?"Giriş Başarılı": "Girdiğiniz kullanıcı adı veya şifre hatalı");
+            Console.WriteLine("****************");
+
+            Console.WriteLine("Lütfen adınızı giriniz");
+            string ad = Console.ReadLine();
+            Console.WriteLine("lütfen şifre giriniz");
+            string parola = Console.ReadLine();
+            switch (ad,parola)
+            {
+                case ("gndgd", "12345"):
+                    Console.WriteLine("Giriş Başarılı");
+                    break;
+            }
+            Console.WriteLine("Giriş başarısız");
+
+
+            #endregion
+                
         }
     }
 }
