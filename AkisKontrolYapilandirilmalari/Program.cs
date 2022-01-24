@@ -173,7 +173,7 @@ namespace AkisKontrolYapilandirilmalari
             {
                 Console.WriteLine("b değeri 10dur");
             }
-            if (b ==10)
+            if (b == 10)
             {
                 Console.WriteLine("b değeri 10dur");
             }
@@ -197,11 +197,11 @@ namespace AkisKontrolYapilandirilmalari
             #endregion
             #region If - Else - If
             int m = 50;
-            if (m>5 && m<=10)
+            if (m > 5 && m <= 10)
             {
                 Console.WriteLine(m * 5);
             }
-            else if (m > 10 && m <=20)
+            else if (m > 10 && m <= 20)
             {
                 Console.WriteLine(m * 10);
             }
@@ -209,9 +209,52 @@ namespace AkisKontrolYapilandirilmalari
             {
                 Console.WriteLine("Doğru kod bloğuna girdi");
             }
-            else 
+            else
             {
                 Console.WriteLine("Diğer şartlar çalışmadı");
+            }
+            #endregion
+            #region If - Else - If Kritik 1
+            int sayi2 = int.Parse(Console.ReadLine());//210 sayısı girdik diyelim
+            //if (sayi2 > 100 && sayi2 <= 200)
+            //{
+            //    Console.WriteLine("100 ile 200 arasında");
+            //}
+            //else if (sayi2 > 200 && sayi2 <= 300) //buraya 
+            //{
+            //    Console.WriteLine("200 ile 300 arasında");
+            //}
+            //else if (sayi2 > 200 && sayi2 <= 400) //ve buraya girmesini isteriz
+            //{
+            //    Console.WriteLine("200 ile 400 arasında");
+            //}
+
+            if (sayi2 > 100 && sayi <= 200)
+            {
+                Console.WriteLine("100 ile 200 arasında");
+            }
+            if (sayi > 200 && sayi2 <= 400)
+            {
+                Console.WriteLine("200 ile 400 arasında");
+            }
+            if (sayi2 > 200 && sayi <= 400)
+            {
+                Console.WriteLine("200 ile 400 arasında");
+            }
+            #endregion
+            #region If - Else - If - ... - Else
+            int sayi3 = 100;
+            if (sayi3 < 100)
+            {
+                Console.WriteLine("100'den küçük");
+            }
+            else if (sayi3 > 100)
+            {
+                Console.WriteLine("100'den büyük");
+            }
+            else
+            {
+                Console.WriteLine("100'e eşit");
             }
             #endregion
         }
