@@ -406,8 +406,7 @@ namespace AkisKontrolYapilandirilmalari
             else
                 //Console.WriteLine("Pozitif");
                 _sonuc = "Pozitif";
-            
-
+            Console.WriteLine(_sonuc);
             #endregion
         }
     }
