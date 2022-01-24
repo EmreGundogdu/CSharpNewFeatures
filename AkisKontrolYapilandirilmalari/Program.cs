@@ -173,6 +173,26 @@ namespace AkisKontrolYapilandirilmalari
             {
                 Console.WriteLine("b değeri 10dur");
             }
+            if (b ==10)
+            {
+                Console.WriteLine("b değeri 10dur");
+            }
+            else
+            {
+                Console.WriteLine("b değeri 10 değildir");
+            }
+            #endregion
+            #region If - Else Kritik 2
+            //her iki durumda da ortak olacak olan/calistirilacak olan komutlari if-else kod bloklarının dışına yazılmalıdır
+            int n = 10;
+            if (n == 10)
+            {
+                Console.WriteLine("n değeri 10dur");
+            }
+            else
+            {
+                Console.WriteLine("n değeri 10 değildir");
+            }
             #endregion
         }
     }
