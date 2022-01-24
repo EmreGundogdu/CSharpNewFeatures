@@ -163,6 +163,17 @@ namespace AkisKontrolYapilandirilmalari
                 Console.WriteLine("v değeri 5'ten küçüktür");
             }
             #endregion
+            #region If - Else Kritik 1
+            int b = 10;
+            if (b != 10)
+            {
+                Console.WriteLine("b değeri 10 değildir");
+            }
+            else
+            {
+                Console.WriteLine("b değeri 10dur");
+            }
+            #endregion
         }
     }
 }
