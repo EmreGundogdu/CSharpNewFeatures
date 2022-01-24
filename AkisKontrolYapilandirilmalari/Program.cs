@@ -136,6 +136,15 @@ namespace AkisKontrolYapilandirilmalari
             }
             //if yapılanması tek başına kullanılıyorsa sadece şarta bağlı olarak çalışacak kod odaklanır...
             #endregion
+            #region If kritik 1
+            //if yapılanmasında illa ki else kullanmak zorunda değiliz
+            int c = 10;
+            if (c != 10)
+            {
+                Console.WriteLine("Merhaba");
+            }
+
+            #endregion
         }
     }
 }
