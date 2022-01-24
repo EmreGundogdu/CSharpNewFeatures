@@ -375,6 +375,38 @@ namespace AkisKontrolYapilandirilmalari
             #endregion
             #region If Senaryo 4
             //Girilen sayının değeri 10 değilse ekrana 'sayı yanlış' yazdıralım
+            int sayi7 = int.Parse(Console.ReadLine());
+            #region Kritik
+            if (sayi7 == 10)
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("sayı yanlış");
+            }
+            #endregion
+            #region Kritik 2
+            if (sayi7 != 10)
+            {
+                Console.WriteLine("sayı yanlış");
+            }
+            #endregion
+            #region Kritik 3
+            Console.WriteLine(sayi7 == 10 ? "sayı doğru" : "sayı yanlış");
+            #endregion
+            #endregion
+            #region If Senaryo 5
+            //Girilen sayının negatif ya da pozitif olduğunu gösteren uygulamayı yazalım
+            int sayi8 = int.Parse(Console.ReadLine());
+            string _sonuc = "";
+            if (sayi8 < 0)
+                //Console.WriteLine("Negatif");
+                _sonuc = "Negatif";
+            else
+                //Console.WriteLine("Pozitif");
+                _sonuc = "Pozitif";
+            
 
             #endregion
         }
