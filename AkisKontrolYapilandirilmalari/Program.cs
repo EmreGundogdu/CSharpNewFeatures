@@ -193,6 +193,26 @@ namespace AkisKontrolYapilandirilmalari
             {
                 Console.WriteLine("n değeri 10 değildir");
             }
+            Console.WriteLine("Merhaba");
+            #endregion
+            #region If - Else - If
+            int m = 50;
+            if (m>5 && m<=10)
+            {
+                Console.WriteLine(m * 5);
+            }
+            else if (m > 10 && m <=20)
+            {
+                Console.WriteLine(m * 10);
+            }
+            else if (m > 10 && m == 50)
+            {
+                Console.WriteLine("Doğru kod bloğuna girdi");
+            }
+            else 
+            {
+                Console.WriteLine("Diğer şartlar çalışmadı");
+            }
             #endregion
         }
     }
