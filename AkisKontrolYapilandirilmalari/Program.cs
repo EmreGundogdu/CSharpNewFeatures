@@ -258,9 +258,35 @@ namespace AkisKontrolYapilandirilmalari
             }
             #endregion
             #region Scopesuz If Yapısı
-            if(true)
+            if (true)
                 Console.WriteLine("A");
             //eğer ki birden fazla konsept/islem/operasyon barındıracaksa bunları kesinlikle scope içersine almamız gerekmektedir.
+            #endregion
+            #region If Senaryo
+            //klavyeden iki ürünün fiyatı girildiğinde toplam fiyat 200 TL'den fazla ise, 2. üründen 25 indirim yaparak ödenecek tutarı gösteren uygulamayı yazalım.
+            Console.Write("Lütfen Birinci Ürünün Fiyatını Giriniz : ");
+            int birinciUrunFiyati = int.Parse(Console.ReadLine());
+            Console.Write("Lütfen İkinci Ürünün Fiyatını Giriniz : ");
+            int ikinciUrunFiyati = int.Parse(Console.ReadLine());
+            #region 1. Kritik
+            //int toplam = birinciUrunFiyati + ikinciUrunFiyati;
+            //if (toplam > 200)
+            //{
+
+            //}
+            #endregion
+            #region 2. Kritik
+            if (birinciUrunFiyati + ikinciUrunFiyati > 200)
+            {
+                //int toplamSonTutar = birinciUrunFiyati + (ikinciUrunFiyati * 75 / 100);
+                //Console.WriteLine(toplamSonTutar);
+                Console.WriteLine(birinciUrunFiyati + (ikinciUrunFiyati * 75 / 100));
+            }
+            else
+            {
+                Console.WriteLine(birinciUrunFiyati + ikinciUrunFiyati);
+            }
+            #endregion
             #endregion
         }
     }
