@@ -136,7 +136,7 @@ namespace AkisKontrolYapilandirilmalari
             }
             //if yapılanması tek başına kullanılıyorsa sadece şarta bağlı olarak çalışacak kod odaklanır...
             #endregion
-            #region If kritik 1
+            #region If Kritik 1
             //if yapılanmasında illa ki else kullanmak zorunda değiliz
             int c = 10;
             if (c != 10)
@@ -144,6 +144,24 @@ namespace AkisKontrolYapilandirilmalari
                 Console.WriteLine("Merhaba");
             }
 
+            #endregion
+            #region If Kritik 2
+            bool medeniHal1 = true;
+            if (medeniHal1)
+            {
+                Console.WriteLine("Evlisin");
+            }
+            #endregion
+            #region If - Else
+            int v = 10;
+            if (v > 5)
+            {
+                Console.WriteLine("v değeri 5'ten büyüktür");
+            }
+            else
+            {
+                Console.WriteLine("v değeri 5'ten küçüktür");
+            }
             #endregion
         }
     }
