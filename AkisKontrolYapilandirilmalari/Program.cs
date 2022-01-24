@@ -299,14 +299,14 @@ namespace AkisKontrolYapilandirilmalari
             else
                 Console.WriteLine("Giriş Başarılı");
 
-            Console.WriteLine(kullaniciAdi == "gndg" && sifre=="12345"?"Giriş Başarılı": "Girdiğiniz kullanıcı adı veya şifre hatalı");
+            Console.WriteLine(kullaniciAdi == "gndg" && sifre == "12345" ? "Giriş Başarılı" : "Girdiğiniz kullanıcı adı veya şifre hatalı");
             Console.WriteLine("****************");
 
             Console.WriteLine("Lütfen adınızı giriniz");
             string ad = Console.ReadLine();
             Console.WriteLine("lütfen şifre giriniz");
             string parola = Console.ReadLine();
-            switch (ad,parola)
+            switch (ad, parola)
             {
                 case ("gndgd", "12345"):
                     Console.WriteLine("Giriş Başarılı");
@@ -316,7 +316,67 @@ namespace AkisKontrolYapilandirilmalari
 
 
             #endregion
-                
+            #region If Senaryo 3
+            //Kullanıcıdan alınan iki sayının ve yapılacak işlem türünün(toplama, çıkarma, çarpma, bölme) seçilmesiyle, sonucu hesaplayan programı yazalım
+            Console.WriteLine("Lütfen 1. sayıyı giriniz");
+            int sayi5 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Lütfen 2. sayıyı giriniz");
+            int sayi6 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Lüfen yapılacak işlemi belirtiniz (+, -, *, /)");
+            char islem = char.Parse(Console.ReadLine());
+            #region 1. Kritik
+            //if (islem == '+')
+            //{
+            //    Console.WriteLine(sayi5 + sayi6);
+            //}
+            //else if (islem == '-')
+            //{
+            //    Console.WriteLine(sayi5 - sayi6);
+            //}
+            //else if(islem == '*')
+            //{
+            //    Console.WriteLine(sayi5 * sayi6);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(sayi5 / sayi6);
+            //}
+            #endregion
+            #region 2. Kritik
+            switch (islem)
+            {
+                case '+':
+                    break;
+                case '-':
+                    break;
+                case '*':
+                    break;
+                case '/':
+                    break;
+                default:
+                    break;
+            }
+            #endregion
+            #region 3. Kritik
+            //diğer kritiklere göre daha efektik bir kod yazmış olduk
+            int sonuc = islem switch
+            {
+                '+' => sayi5 + sayi6,
+                '-' => sayi5 - sayi6,
+                '*' => sayi5 * sayi6,
+                '/' => sayi5 / sayi6,
+                _ => sayi5 + sayi6
+            };
+            Console.WriteLine(sonuc);
+            #endregion
+            #region 4. Kritik
+            Console.WriteLine(islem == '+' ? sayi5 + sayi6 : (islem == '-' ? sayi5 - sayi6 : (islem == '/' ? sayi5 / sayi6 : sayi5 * sayi6)));
+            #endregion
+            #endregion
+            #region If Senaryo 4
+            //Girilen sayının değeri 10 değilse ekrana 'sayı yanlış' yazdıralım
+
+            #endregion
         }
     }
 }
