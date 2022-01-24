@@ -257,6 +257,11 @@ namespace AkisKontrolYapilandirilmalari
                 Console.WriteLine("100'e eşit");
             }
             #endregion
+            #region Scopesuz If Yapısı
+            if(true)
+                Console.WriteLine("A");
+            //eğer ki birden fazla konsept/islem/operasyon barındıracaksa bunları kesinlikle scope içersine almamız gerekmektedir.
+            #endregion
         }
     }
 }
