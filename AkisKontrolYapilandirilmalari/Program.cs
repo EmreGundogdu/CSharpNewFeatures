@@ -527,6 +527,15 @@ namespace AkisKontrolYapilandirilmalari
              * }*/
 
             #endregion
+            #region Not Pattern
+            /*
+             * string GetProduct(Iprdouct p) => p switch 
+             * {
+             *  Technologic => "Tekonoloji",
+             *  Computer => "Bilgisayar",
+             *  not Goggles => "Gözlük"
+             *  };*/
+            #endregion
         }
     }
 }
