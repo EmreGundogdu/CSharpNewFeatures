@@ -408,6 +408,71 @@ namespace AkisKontrolYapilandirilmalari
                 _sonuc = "Pozitif";
             Console.WriteLine(_sonuc);
             #endregion
+            #region Type Pattern
+            object s = "Emre";
+            if (s is string ss) //type pattern ile tanımlanan  değişkene(ss) dışarıdan erişlemez null olma ihtimalinden dolayı yani ss değeri dolu gelip gelmeme ihtimalinden dolayı scope dışarısın da kullanılamaz
+            {
+                //string _s = (string)s; ESKİ YÖNTEM
+            }
+            else if (s is int sss)
+            {
+
+            }
+            //ss = "dasdsa";  -> Burada değer atayabiliriz
+            //Console.WriteLine(ss);  -> Ama burada okuyamayız null olma ihtimalinden dolayı
+            #endregion
+            #region Constant Pattern                       
+            object a = "Emre";
+            if(a is "Emre") //değer kontrolü
+                Console.WriteLine($"Emre");
+            if (a is int) //tür kontrolü
+                Console.WriteLine("Int");
+            #region Constant Pattern - Kritik
+            //is operatörü bir değişkenin türünü sormamızı/belirlemizi sağlayan bir operatördür ve bu operatörün kullanıldığı değişkenlerin türü illa bir referans türlü olma zorunda değildir. İstersek değer türlü değişkenlerde is operatörü kullanılabilmektedir ve hatta primitive türlerde bile kullanılabilmektedir.
+            int f = 5;
+            //Normal is operatörü kısmı
+            Console.WriteLine(f is int);
+            Console.WriteLine(f is string);    //burdakiler is normal is operatörünün kendi fıtratındaki işlemidir
+            Console.WriteLine(f is bool);
+
+            //Constant pattern kısmı 
+            Console.WriteLine(f is 5);
+            //Eğer ki is operatörüyle bir değişkenin değerini == operatörünün sorumluluğuyla check ediyorsa işte buna constant pattern denir
+            #endregion
+            #endregion
+            #region Var Pattern
+            object g = "Emre";
+            if (g is var gg)
+            {
+
+            }
+            #region Var Pattern - Kritik
+            //var keywordu ile var pattern'de ki var yapılanması arasında davranış farkı vardır
+            //var keywordu : derleme zamanında turnu belirlerken
+            //var pattern'da ki var keywordu ise : runtime'da turunu belirleyecektir
+            object h = "Emre";
+            var hh = "dsadas";
+            if (h is var hhh)
+            {
+
+            }
+            #endregion
+            #region  Var Pattern - Kritik
+            object k = "Emre";
+            var kk = "dasdas";
+            dynamic _k = "asdas";
+            if (k is var kkk)
+            {
+
+            }
+            #endregion
+            #endregion
+            #region Recursive Pattern
+
+            #endregion
+            #region Type Ve Var Pattern Üzerine Kritik
+
+            #endregion
         }
     }
 }
