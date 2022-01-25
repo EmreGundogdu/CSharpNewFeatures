@@ -79,6 +79,19 @@ namespace HataKontrolMekanizmasi
                 Console.WriteLine("Mesaj  : " + ex.Message);
             }
             #endregion
+            #region Exception Dışında Farklı Bir Tür İle Hata Yakalama
+            try
+            {
+                int a1 = 2, a2 = 10;
+                int a3 = a1 / a2;
+
+                int.Parse("sdadas"); //Bu senaryoda try catch blogu kullanıldığı halde fiziksel olarak patlama meydana gelmis ve uygulama sona ermis bulunmaktadır. Catch blogu eger ki bir ture özgü ise(genel olmayan) böyle bir durumda sadece o türden hataları yakalayabilen bir yapı haline gelir
+            }
+            catch (DivideByZeroException ex)//catch blogu bir parametre almazsa eğer tüm hatalı karşılar.Özel bir exception tanımlanmışsa sadece o türe ait bilgileri karşılar
+            {
+                Console.WriteLine("Mesaj : " + ex.Message);
+            }
+            #endregion
         }
     }
 }
