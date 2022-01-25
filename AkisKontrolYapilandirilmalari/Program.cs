@@ -423,7 +423,7 @@ namespace AkisKontrolYapilandirilmalari
             #endregion
             #region Constant Pattern                       
             object a = "Emre";
-            if(a is "Emre") //değer kontrolü
+            if (a is "Emre") //değer kontrolü
                 Console.WriteLine($"Emre");
             if (a is int) //tür kontrolü
                 Console.WriteLine("Int");
@@ -471,7 +471,25 @@ namespace AkisKontrolYapilandirilmalari
 
             #endregion
             #region Type Ve Var Pattern Üzerine Kritik
+            object l = "dsadasdas";
+            if (l is string ll)
+            {
+                Console.WriteLine(ll);
+            }
+            if (l is var _l)
+            {
 
+            }
+            //TYPE PATTERN                
+            //type pattern'da x değişkenin degerinin string olmama ihtlimalinde o1'in null olma ihtimali söz konusu oldugu icin o1 kullanırken hata verir
+            bool result = l is string o1; //normal is kullanımı
+            Console.WriteLine(o1);
+
+
+            //VAR PATTERN               
+            //var pattern'da ise l degiskeninin degeri ne olursa olsun var ile o2 ye atanacagından doalyı o2nin null olma ihtimali yoktur. Dolayısıyla o2'yi rahatca kullanabiliriz
+            bool result2 = l is var o2;//normal var derlemede türü belirler .//var pattern runtimede türü belirler
+            Console.WriteLine(o2);
             #endregion
         }
     }
