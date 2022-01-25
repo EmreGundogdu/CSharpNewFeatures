@@ -491,6 +491,42 @@ namespace AkisKontrolYapilandirilmalari
             bool result2 = l is var o2;//normal var derlemede türü belirler .//var pattern runtimede türü belirler
             Console.WriteLine(o2);
             #endregion
+            #region Single Type Pattern
+            //Bir değişkenin içerisindeki değernin belirli bir türde olup olmadığını hızlı bir şekilde kontrol etmemizi sağlayan desendir.
+            /*
+             * object obj = new Person()
+             * switch(obj)
+             * {
+             *  case Person:
+             *  // ...
+             *      break;
+             * }      */
+            #endregion
+            #region Relational Pattern
+            //Desenlerde <, >, <=, >= operatörleri kullanılabilmekte ve belirli karşılaştırmalar hızlıca gerçekleşir
+            /*
+             * int number = 111;
+             * string result = number swtich
+             * {
+             * < 50 => "50'den küçük",
+             * >50=> "50'den büyük",
+             * _ => "hiçbiri"
+             * }; */
+
+            //relational pattern ile switch ile if diğer kıyaslamaları ve karşılaştırmaları yapmamızı sağladı
+            #endregion
+            #region  Logical Patterns
+            //and, or ve not gibi mantıksal operatörler kullanıbilmektedir. Relational Pattern ile oldukça uyumludur
+            /*
+             * int number = 60;
+             * string result = number switch
+             * {
+             * >10 and < 50 => "10'dan küçük 50'den büyük",
+             * >50 and < 100 and 60 => "50'den büyük veya 100den küçük ve 60'a eşit",
+             * not 51 => "51 değil"
+             * }*/
+
+            #endregion
         }
     }
 }
