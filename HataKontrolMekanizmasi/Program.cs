@@ -92,6 +92,28 @@ namespace HataKontrolMekanizmasi
                 Console.WriteLine("Mesaj : " + ex.Message);
             }
             #endregion
+            #region Birden Çok Catch Durumu 
+            try //alınan hatalar sırayla catch bloklarına girer
+            {
+                int z = 0, z2 = 10;
+                int z3 = z / z2; //divide by zero exception
+                int.Parse("dsadas"); //format exception
+            }
+            catch (DivideByZeroException ex) //DivideByZeroException hatası alındığında bu hatayı karşılayacak olan catch bloğu burasıdır
+            {
+
+            }
+            catch(FormatException ex) //FormatException hatasını karşılayacak olan catch tanımladık
+            {
+
+            }
+            //Yukarıda ki exception türleri haricinde başka bir türde exception hatası alıcaksak o tür için bir catch bloğu daha yazılmalıdır. Yukarıdaki exception türleri haricinde gelicek olan hata türünü Excetpion İle karşılayabiliriz. Catch bloğunun en sonuna Exception turunde parametre(catch) tanımlarsan alınan hata ustteki turlerden herhangi biri değilse kesinlikle bu Excepiton tarafından karşılanabilir olacağıdan dolayı en kotu buraya girecektir
+            catch(Exception ex)// burası en sona yazılmalıdır yani Exception en sona yazılmalıdır. ZORUNDALIKTIR!!!...
+            {
+
+            }
+            
+            #endregion
         }
     }
 }
