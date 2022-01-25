@@ -483,7 +483,7 @@ namespace AkisKontrolYapilandirilmalari
             //TYPE PATTERN                
             //type pattern'da x değişkenin degerinin string olmama ihtlimalinde o1'in null olma ihtimali söz konusu oldugu icin o1 kullanırken hata verir
             bool result = l is string o1; //normal is kullanımı
-            Console.WriteLine(o1);
+            //Console.WriteLine(o1); BURASI HATA VERİR O YÜZDEN YORUM SATIRI YAPTIM !!!!!!!!!!
 
 
             //VAR PATTERN               
