@@ -39,7 +39,7 @@ namespace HataKontrolMekanizmasi
             Console.Write("Lütfen Birinci Sayıyı Giriniz");
             int sayi1 = 0, sayi2 = 0;
             try
-            {                
+            {
                 sayi1 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Lütfen İkinci Sayıyı Giriniz");
                 sayi2 = int.Parse(Console.ReadLine());
@@ -54,6 +54,30 @@ namespace HataKontrolMekanizmasi
             #region  Try Catch Hata Parametreleri
             //Çalışma zamanında alınan hataya dair bizlere bilgi veren/taşıyan parametredir.
 
+            //DivideByZeroException
+            int s1 = 0, s2 = 10;
+            int a = s2 / s1;
+            //Run time'da hata alındığında bunu editörde görebiliriz. Burada görülen DivideByZeroException bizim aldıgımız/karşılaştığuımız hatanın türünü ifade etmektedir.
+
+
+            //NullReferenceException  -> Null değerine sahip bir değişken üzerinden işlem yapmaya çalıştık
+            object x = null;
+            x.ToString();
+
+
+            //FormatException -> String formatını uygun olmayan int formatına döndürmeye çalıştık
+            int.Parse("dasdasdas");
+
+
+            try
+            {
+                int s3 = 0, s4 = 0;
+                int a2 = s3 / s4;
+            }
+            catch (Exception ex)  //Exception:Bizlere hatayla ilgili tüm bilgileri getirecek olan bir üst türdür.
+            {
+                Console.WriteLine("Mesaj  : " + ex.Message);
+            }
             #endregion
         }
     }
