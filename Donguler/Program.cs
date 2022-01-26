@@ -116,6 +116,21 @@ namespace Donguler
                 Console.WriteLine("Emre");
             }
             //6. Varyasyon
+            for (; ; ) //değişken & şart & işlem => girmediğmizde sonsuz döngüye girer
+            {
+                Console.WriteLine("Emre");
+            }
+            //7. Varyasyon
+            for (int i = 0; ; i++) //şart belirtmezsek yine sonsuz döngüye girer
+            {
+                Console.WriteLine("Emre");
+            }
+            //8. Varyasyon
+            for (int i = 0, i2 = 0; i < 10 && i2 < 5; i++, i2++)//birden fazla değişken olduğunda virgül ile ayırmak gerekir
+            {
+                Console.WriteLine(i);
+                Console.WriteLine(i2);
+            }
             #endregion
         }
     }
