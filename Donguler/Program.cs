@@ -58,6 +58,33 @@ namespace Donguler
             }
             Console.WriteLine("Toplam Sonuc : " + toplamSonuc);
             #endregion
+            #region For Örnek 3
+            //klavyeden girilen sayının faktöriyelini bulan programı yazalım
+            int sayi = int.Parse(Console.ReadLine());
+            #region 1. Cozum
+            int faktoriyel = 1;
+            for (int i = 1; i <= sayi; i++)
+            {
+                faktoriyel *= i;
+            }
+            Console.WriteLine("Faktöriyel : " + faktoriyel);
+            #endregion
+            #region 2. Cozum
+            int _faktoriyel = 1;
+            string sonuc = "";
+            for (int i = sayi; i > 0; i--)
+            {
+                _faktoriyel *= i;
+                sonuc += i + (i == 1 ? " = " : " x ");
+                //if (i == 1)               
+                //    sonuc += i + " = ";
+                //else                //
+                //    sonuc += i + " x ";
+                //
+            }
+            Console.WriteLine("Faktöriyel : " + sonuc + _faktoriyel);
+            #endregion
+            #endregion
         }
     }
 }
