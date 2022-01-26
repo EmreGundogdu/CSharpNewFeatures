@@ -92,6 +92,17 @@ namespace Donguler
 
             }
             //2. Varyasyon
+            int x = 0; // değişken dışarıda tanımlanır
+            for (; x < 10; x++)
+            {
+
+            }
+            //3. Varyasyon
+            int y = 0;
+            for (y = 0; y < 10; y++) //Bu varyasyonda dıaşrıda tanımlanan y değişkenini for dongusunde başlangıç değeri olarak göstermek sitiyorsak eğer yine bir başlangıç değeri zorunludur.
+            {
+
+            }
             #endregion
         }
     }
