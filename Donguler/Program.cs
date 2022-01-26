@@ -33,10 +33,16 @@ namespace Donguler
             }
             #endregion
             #region For Örnek 1
-            //1den 10'a kadar olan sayıları ekrana yazdıralım
+            //1den 10'a kadar olan sayıları ekrana yaz
             for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine(i);
+            }
+            //Uzun yoldan 1-10 arası yazdırma
+            Console.WriteLine("Uzun Yol");
+            for (int i = 50; i < 60; i++)
+            {
+                Console.WriteLine(i - 49);
             }
             #endregion
         }
