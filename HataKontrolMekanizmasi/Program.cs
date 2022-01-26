@@ -112,7 +112,25 @@ namespace HataKontrolMekanizmasi
             {
 
             }
-            
+
+            #endregion
+            #region Finally Bloğu
+            //finally bloğu, try catch yapılanmasında hata alınsada alınmasada her iki durumda da tetiklenmesi/çalıştırılması gereken kodlaru yazdığımız bloktur
+            try
+            {
+                //hata verebilecek kodlar buraya
+                Console.WriteLine("try");
+            }
+            catch 
+            {
+                //hata alındıktan sonra yapılacak işlemler buraya
+                Console.WriteLine("catch");
+            }
+            finally
+            {
+                //her iki durumda da çalışmasını istediğimiz kodlar buraya
+                Console.WriteLine("finally");
+            }
             #endregion
         }
     }
