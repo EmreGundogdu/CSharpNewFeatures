@@ -103,12 +103,12 @@ namespace HataKontrolMekanizmasi
             {
 
             }
-            catch(FormatException ex) //FormatException hatasını karşılayacak olan catch tanımladık
+            catch (FormatException ex) //FormatException hatasını karşılayacak olan catch tanımladık
             {
 
             }
             //Yukarıda ki exception türleri haricinde başka bir türde exception hatası alıcaksak o tür için bir catch bloğu daha yazılmalıdır. Yukarıdaki exception türleri haricinde gelicek olan hata türünü Excetpion İle karşılayabiliriz. Catch bloğunun en sonuna Exception turunde parametre(catch) tanımlarsan alınan hata ustteki turlerden herhangi biri değilse kesinlikle bu Excepiton tarafından karşılanabilir olacağıdan dolayı en kotu buraya girecektir
-            catch(Exception ex)// burası en sona yazılmalıdır yani Exception en sona yazılmalıdır. ZORUNDALIKTIR!!!...
+            catch (Exception ex)// burası en sona yazılmalıdır yani Exception en sona yazılmalıdır. ZORUNDALIKTIR!!!...
             {
 
             }
@@ -121,7 +121,7 @@ namespace HataKontrolMekanizmasi
                 //hata verebilecek kodlar buraya
                 Console.WriteLine("try");
             }
-            catch 
+            catch
             {
                 //hata alındıktan sonra yapılacak işlemler buraya
                 Console.WriteLine("catch");
@@ -130,6 +130,27 @@ namespace HataKontrolMekanizmasi
             {
                 //her iki durumda da çalışmasını istediğimiz kodlar buraya
                 Console.WriteLine("finally");
+            }
+            #endregion
+            #region When Yapısı İle Hata Filtreleme(C# 6.0)
+            //try catch bloklarına when blokları ile şart uygulayabilmekteyiz
+            string z = "a";
+            try
+            {
+                int q1 = 0, q2 = 10;
+                int q3 = q1 / q2;
+            }
+            catch (DivideByZeroException ex) when (z == "a")
+            {
+                Console.WriteLine("Mesaj : " + ex.Message);
+            }
+            catch (DivideByZeroException ex) when (z == "b")
+            {
+                Console.WriteLine("Mesaj : " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Genel Hata Yakalama");
             }
             #endregion
         }
