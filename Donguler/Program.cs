@@ -116,15 +116,15 @@ namespace Donguler
                 Console.WriteLine("Emre");
             }
             //6. Varyasyon
-            for (; ; ) //değişken & şart & işlem => girmediğmizde sonsuz döngüye girer
-            {
-                Console.WriteLine("Emre");
-            }
+            //for () değişken & şart & işlem => girmediğmizde sonsuz döngüye girer
+            //{
+            //    Console.WriteLine("Emre");
+            //}
             //7. Varyasyon
-            for (int i = 0; ; i++) //şart belirtmezsek yine sonsuz döngüye girer
-            {
-                Console.WriteLine("Emre");
-            }
+            //for (int i = 0; ; i++) şart belirtmezsek yine sonsuz döngüye girer
+            //{
+            //    Console.WriteLine("Emre");
+            //}
             //8. Varyasyon
             for (int i = 0, i2 = 0; i < 10 && i2 < 5; i++, i2++)//birden fazla değişken olduğunda virgül ile ayırmak gerekir
             {
@@ -149,6 +149,25 @@ namespace Donguler
             {
                 Console.WriteLine("Merhaba Dünya");
                 q++;
+            }
+            #endregion
+            #region While 2. Kritik
+            //Klavyeden girilen sayıdan geriye doğru 0'a kadar sayan bir sayaç hazırlayalım
+            int girilenSayi = int.Parse(Console.ReadLine());
+            while (girilenSayi >= 0)
+            {
+                Console.WriteLine(girilenSayi);
+                girilenSayi--;
+            }
+            #endregion
+            #region While 3. Kritik
+            //0 ile 100 arasındaki tek sayıları toplayarak sonucu ekranda gösteren programı yazalım
+            int d = 0, toplam = 0;
+            while (d <= 100)
+            {
+                if (d % 2 == 1)
+                    toplam += d;
+                d++;
             }
             #endregion
         }
