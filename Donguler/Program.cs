@@ -169,6 +169,26 @@ namespace Donguler
                     toplam += d;
                 d++;
             }
+            Console.WriteLine(toplam);
+            #endregion
+            #region While 4. Kritik
+            //Klavyeden girilen sayının faktöriyelini hesaplayalım
+            int f = int.Parse(Console.ReadLine());
+            int faktoriyelDegiskeni = 1;
+            while (f > 0)
+            {
+                faktoriyelDegiskeni *= f;
+                f--;
+            }
+            Console.WriteLine(faktoriyelDegiskeni);
+            #endregion
+            #region While 5. Kritik
+            //O anki tarihin saniye değeri 5'in katıysa eğer tarihi ekranda gösteren uygulamayı yazalım
+            while (true)
+            {
+                if (DateTime.Now.Second % 5 == 0)
+                    Console.WriteLine(DateTime.Now);
+            }
             #endregion
         }
     }
