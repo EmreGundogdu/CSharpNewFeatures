@@ -132,6 +132,16 @@ namespace Donguler
                 Console.WriteLine(i2);
             }
             #endregion
+            #region While Döngüsü - For İle Kıyaslama
+            //while döngüsünde for gibi çalışabilmek için kombinasyonu kendimiz oluşturmalıyız
+            int _i = 0;
+            Console.WriteLine("WHİLE");
+            while (_i < 10)
+            {
+                Console.WriteLine("Emre");
+                _i++; 
+            }
+            #endregion
         }
     }
 }
