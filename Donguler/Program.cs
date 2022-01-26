@@ -26,6 +26,15 @@ namespace Donguler
                 Console.WriteLine("Emre");
             }
             #endregion
+            #region For Döngüsü - 3. Kritik
+            for (int i = 50; i > 0; i -= 5)
+            {
+                Console.WriteLine("Gundogdu");
+            }
+            #endregion
+            #region For Örnek 1
+
+            #endregion
         }
     }
 }
