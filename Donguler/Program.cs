@@ -45,6 +45,19 @@ namespace Donguler
                 Console.WriteLine(i - 49);
             }
             #endregion
+            #region For Örnek 2
+            //1 ile 40(dahil) arasındaki çift sayıları toplayarak sonucu ekrana yazdıralım
+            int toplamSonuc = 0;
+            for (int i = 1; i <= 40; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    //Console.WriteLine(i); 1-40 arası çift sayıları görmek için                    
+                    toplamSonuc += i;
+                }
+            }
+            Console.WriteLine("Toplam Sonuc : " + toplamSonuc);
+            #endregion
         }
     }
 }
