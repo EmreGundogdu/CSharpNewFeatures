@@ -6,7 +6,16 @@ namespace Donguler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Döngüler Nedir
+            //Console.WriteLine("dasdsa");
+            //Console.WriteLine("dasdsa");
+            //Console.WriteLine("dasdsa");
+            //Console.WriteLine("dasdsa");
+            //Console.WriteLine("dasdsa");
+            #endregion
+            #region For Döngüsü
+
+            #endregion
         }
     }
 }
