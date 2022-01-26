@@ -139,7 +139,16 @@ namespace Donguler
             while (_i < 10)
             {
                 Console.WriteLine("Emre");
-                _i++; 
+                _i++;
+            }
+            #endregion
+            #region While 1. Kritik
+            //Ekrana 10 kere "Merhaba Dünya" yazdıran bir program yazalım
+            int q = 1;
+            while (q <= 10)
+            {
+                Console.WriteLine("Merhaba Dünya");
+                q++;
             }
             #endregion
         }
