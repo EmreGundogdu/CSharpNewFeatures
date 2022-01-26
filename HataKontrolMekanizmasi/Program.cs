@@ -134,17 +134,17 @@ namespace HataKontrolMekanizmasi
             #endregion
             #region When Yapısı İle Hata Filtreleme(C# 6.0)
             //try catch bloklarına when blokları ile şart uygulayabilmekteyiz
-            string z = "a";
+            string b = "b";
             try
             {
                 int q1 = 0, q2 = 10;
                 int q3 = q1 / q2;
             }
-            catch (DivideByZeroException ex) when (z == "a")
+            catch (DivideByZeroException ex) when (b == "a")
             {
                 Console.WriteLine("Mesaj : " + ex.Message);
             }
-            catch (DivideByZeroException ex) when (z == "b")
+            catch (DivideByZeroException ex) when (b == "b")
             {
                 Console.WriteLine("Mesaj : " + ex.Message);
             }
@@ -152,6 +152,20 @@ namespace HataKontrolMekanizmasi
             {
                 Console.WriteLine("Genel Hata Yakalama");
             }
+            #endregion
+            #region Mantıksal Hatalar - Örnek 1
+            Console.WriteLine(2 * 6);//6 yerine 5 yazmak istiyordur
+            #endregion
+            #region Mantıksal Hatalar - Örnek 2
+            bool medeniHal = true;
+            if (!medeniHal)//! işaretini koymamız gerekiyordu
+                Console.WriteLine("Hediye Gönder");
+            else
+                Console.WriteLine("Hediye Gönderme");
+            #endregion
+            #region Mantıksal Hatalar - Örnek 3
+            int i = 10, i2 = 20;
+            Console.WriteLine(i + i2); //çarpma işlemi yapmak yerine toplama işareti kullandık | işlem eksikliği vb 
             #endregion
         }
     }
