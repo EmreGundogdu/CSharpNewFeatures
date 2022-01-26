@@ -33,7 +33,11 @@ namespace Donguler
             }
             #endregion
             #region For Örnek 1
-
+            //1den 10'a kadar olan sayıları ekrana yazdıralım
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
             #endregion
         }
     }
