@@ -103,6 +103,19 @@ namespace Donguler
             {
 
             }
+            //4. Varyasyon
+            int t = 0;
+            for (; t < 10;)
+            {
+                t++;
+            }
+            //5. Varyasyon
+            int a = 10;
+            for (int i = 0; a != i * 2; i++) //5e kadar döngü döner
+            {
+                Console.WriteLine("Emre");
+            }
+            //6. Varyasyon
             #endregion
         }
     }
