@@ -85,6 +85,14 @@ namespace Donguler
             Console.WriteLine("Faktöriyel : " + sonuc + _faktoriyel);
             #endregion
             #endregion
+            #region Varyasyonlar
+            //1. Varyasyon
+            for (int i = 0; i < 10; i++)
+            {
+
+            }
+            //2. Varyasyon
+            #endregion
         }
     }
 }
