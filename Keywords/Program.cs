@@ -81,6 +81,21 @@ namespace Keywords
                 }
             }
             #endregion
+            #region Break Örnek 2
+            //Kullanıcıdan alınan sonsuz adet sayı değerlerinden 37'nin katı girildiğinde sonlanan uygulamayı yazalım
+            bool durum = true;
+            while (durum)
+            {
+                Console.WriteLine("Lütfen bir sayı giriniz");
+                int sayi = int.Parse(Console.ReadLine());
+                if (sayi % 37 == 0)
+                {
+                    Console.WriteLine("Uygulama sonlanmıştır");
+                    //durum = !durum;
+                    break;
+                }
+            }
+            #endregion
             #endregion
 
         }
