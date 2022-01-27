@@ -289,6 +289,11 @@ namespace Donguler
                 }
             }
             #endregion
+            #region Foreach Bir Iterasyondur
+            //Döngü  : Belirli bir KOMBİNASYON eşliğinde çalışan ve belirli bir ŞARTA bağlı olan periyoduk işlemler gerçekleştiren yapılanmalardır
+            //Iterasyon : Iterasyon mantığında ne kombinasyon ne de şart vardır. Iterasyonda; sonraki veri, oteki veri anlamına gelen itere etme fiili vardır. Bir veri kümesi üzerinde işlem yapmamızı/verileri elde etmemizi sağlayan yapılanmadır.
+
+            #endregion
         }
     }
 }
