@@ -208,6 +208,38 @@ namespace Donguler
                 Console.WriteLine("Do While Döngüsü");
             } while (false);
             #endregion
+            #region Scopesuz Döngüler
+            for (int i = 0; i <= 10; i++)
+                Console.WriteLine("Emre");
+
+            while (false)
+                Console.WriteLine("Emre");
+
+            do
+                Console.WriteLine("Emre");
+            while (true);
+            #endregion
+            #region Sonsuz Döngü
+            #region Sonsuz Döngü - For
+            //for (int i = 0; true; i++)   int'in max değerine kadar sayana kadar sonsuz döngüye girer
+            //{
+
+            //}
+            //for (; ; )   sonsuza dek sürer
+            //{
+
+            //}
+
+            bool dongu = true;
+            for (; dongu;)
+            {
+                if (true)
+                {
+                    dongu = !dongu;
+                }
+            }
+            #endregion
+            #endregion
         }
     }
 }
