@@ -230,14 +230,27 @@ namespace Donguler
 
             //}
 
-            bool dongu = true;
-            for (; dongu;)
+            //bool dongu = true;
+            //for (; dongu;)
+            //{
+            //    if (true)
+            //    {
+            //        dongu = !dongu;
+            //    }
+            //}
+            #endregion
+            #region Sonsuz Döngü - While
+            bool durum = false;
+            while (!durum)
             {
                 if (true)
                 {
-                    dongu = !dongu;
+                    durum = !durum;
                 }
             }
+            #endregion
+            #region Sonsuz Döngü - Do While
+
             #endregion
             #endregion
         }
