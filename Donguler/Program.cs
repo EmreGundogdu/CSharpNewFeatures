@@ -249,8 +249,15 @@ namespace Donguler
                 }
             }
             #endregion
-            #region Sonsuz Döngü - Do While
-
+            #region Sonsuz Döngü - Do While            
+            bool durum2 = true;
+            do
+            {
+                if (true)
+                {
+                    durum2 = !durum2;
+                }
+            } while (durum2);
             #endregion
             #endregion
         }
