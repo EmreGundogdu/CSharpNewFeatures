@@ -260,6 +260,35 @@ namespace Donguler
             } while (durum2);
             #endregion
             #endregion
+            #region İç İçe Döngüler
+            for (int i = 0; i <= 10; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    while (true)
+                    {
+
+                    }
+                }
+            }
+            #endregion
+            #region İç İçe Döngüler - For
+            //iç içe for döngülerinde değişken isimleri farklı olmalıdır
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    for (int k = 0; k < 3; k++) //toplam maliyeti = 150 | 10 * 5 * 3 = 150
+                    {
+                        int p = 0;
+                        while (p < 4)
+                        {
+                            p++;
+                        }
+                    }
+                }
+            }
+            #endregion
         }
     }
 }
