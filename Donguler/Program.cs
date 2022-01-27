@@ -190,6 +190,24 @@ namespace Donguler
                     Console.WriteLine(DateTime.Now);
             }
             #endregion
+            #region  Do While
+            //While Döngüsü : önce şarta bakar sonra kodu çalıştırır
+            //Do While Döngüsü : önce kodu çalıştırır sonra şarta bakar - şartın true ya da false olup olmadığına bakmaz do kısmı
+            //çalışır
+
+            //While Örnek : Havaya bakarız ona göre şemsiye alırız
+            //Do While Örnek : Önce şemsiyeyi alırız sonra havaya bakarız
+
+            while (false)
+            {
+                Console.WriteLine("While Döngüsü");
+            }
+
+            do
+            {
+                Console.WriteLine("Do While Döngüsü");
+            } while (false);
+            #endregion
         }
     }
 }
