@@ -39,14 +39,47 @@ namespace Keywords
             //    }
             //    break;
             //}
-            do
+            //do
+            //{
+            //    if (true)
+            //    {
+            //        break;
+            //    }
+            //} while (true);
+            //TRY CATCH BLOĞUNDA BREAK KULLANILAMAZ ANCAK BİR DONGU ICERISINDE TANIMLANAN TRY CATCH BLOGUNDA KULLANILABİLİR
+            //while (true)
+            //{
+            //    if (DateTime.Now.Second == 20)
+            //        break;
+            //    Console.WriteLine(DateTime.Now);
+            //}
+            for (int i = 0; i < 5; i++)
             {
-                if (true)
+                for (int j = 0; j < 3; j++) //j'yi 1 yapar ancak 
                 {
+                    if (j == 1) //1 oldğunda break olucağı için bize 0 değeri verir yani j değeri brekaten önce 1 olur ama yazdırmaz 
+                        break;
+                    Console.WriteLine("i : " + i + " j : " + j);
+                }
+            }
+            #endregion
+            #region Break Örnek
+            //Kullanıcıdan 't' harfi girene kadar alınan sınırsız sayıda sayıyı toplayan ve sonucu ekrana yazdıran uygulamayı yazalım
+            int toplam = 0;
+            while (true)
+            {
+                Console.WriteLine("Lütfen Bir Sayı Giriniz.");
+                string girilenDeger = Console.ReadLine();
+                if (girilenDeger == "t")
+                {
+                    Console.WriteLine("Toplam Sonuc : " + toplam);
                     break;
                 }
-            } while (true);
-            //TRY CATCH BLOĞUNDA BREAK KULLANILAMAZ ANCAK BİR DONGU ICERISINDE TANIMLANAN TRY CATCH BLOGUNDA KULLANILABİLİR
+                else
+                {
+                    toplam += int.Parse(girilenDeger);
+                }
+            }
             #endregion
             #endregion
 
