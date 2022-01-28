@@ -25,7 +25,7 @@ namespace Degiskenler
             #region Ram Yapısı
             //iki yapılanma vardır (STACK | HEAP)
             //STACK : Değer türlü değişkenleri ve değerleri tutar(değişken türü,adı ve değeri tutar) & metod isimleri || burada tutulan değişken ismine referansta denebilir
-            //HEAP : Nesnleri tutar 
+            //HEAP : Nesneleri tutar 
             int yas1; //1
             string adi2; //2
             string soyadadi3; //3
