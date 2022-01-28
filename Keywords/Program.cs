@@ -96,6 +96,19 @@ namespace Keywords
                 }
             }
             #endregion
+            #region Continue
+            //Sadece döngülerde erişelibilen ve döngülerde kullanılan bir keyworddür.
+            for (int i = 0; i < 10; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    continue;//2'ye bölümünden kalan 0 olmayanları atlar
+                }
+            }
+            #endregion
+            #region Continue Örnek
+
+            #endregion
             #endregion
 
         }
