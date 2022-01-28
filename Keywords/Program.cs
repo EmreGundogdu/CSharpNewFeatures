@@ -170,6 +170,35 @@ namespace Keywords
                 }
                 Console.WriteLine("Uygulama çalışıyor...");
             }
+        #endregion
+        #region Goto
+        //Kodun senkranizasyonunu bozup, akisi ters istikamette alamızı sağlayan bir manevratik komuttur
+        //switch case yapılanmasında dahili olarak kullanılan bu komut metot içerisinde heryerde kullanılabilir
+        //switch (10)
+        //{
+        //    case 5:
+        //        Console.WriteLine("5");
+        //        break;
+        //    case 10:
+        //        goto case 15;
+        //    case 15:
+        //        break;
+        //}
+        a:
+            Console.WriteLine("Merhaba");
+            Console.WriteLine("Dünya");
+            goto a;
+            #endregion
+            #region goto Örnek
+            //1'den 100e kadar yazalım
+            int y = 1;
+        x:
+            Console.WriteLine(y++);
+            if (y != 100)
+                goto x;
+
+            //for (int i = 0; i < 100; i++)
+            //    Console.WriteLine(i);
             #endregion
         }
     }
