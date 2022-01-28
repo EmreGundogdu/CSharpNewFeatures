@@ -19,6 +19,7 @@ namespace Diziler
             yaslar[2] = 6;
             yaslar[3] = 8;
             yaslar[4] = 10;
+            Console.WriteLine(yaslar[2]);
             #endregion
         }
     }
