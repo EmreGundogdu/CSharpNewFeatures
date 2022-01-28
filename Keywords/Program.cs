@@ -240,9 +240,7 @@ namespace Keywords
             //}
             //if (true) ;
             #endregion
-            #region MyRegion
 
-            #endregion
         }
     }
 }
