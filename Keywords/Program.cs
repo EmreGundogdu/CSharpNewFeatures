@@ -7,7 +7,7 @@ namespace Keywords
         static void Main(string[] args)
         {
             //Keyword : Programlama dilinin en atomik parçalarıdır diyebiliriz
-            #region Yardımcı Manevratik Komutlar
+            //YARDIMCI MANEVRATİK KOMUTLAR
             #region Break
             //Switch-case ve döngülerde kullanılabilir bi keyworddür. Kullanıldığı yapıdan çıkış yapmayı. Sonlandırmayı yarayan keyworddür.
             //switch (10)
@@ -107,10 +107,70 @@ namespace Keywords
             }
             #endregion
             #region Continue Örnek
-
+            //Kullanıcının girdiği sonsuz adet sayıdan pozitif olanlarını çarpan ve 't'(enter) yapıldığında sonucu ekrana yazdıran kodu yazalım
+            int carpim = 1;
+            while (true)
+            {
+                Console.WriteLine("Lütfen bir sayı giriniz");
+                string girilenDeger = Console.ReadLine();
+                if (girilenDeger == "t")
+                {
+                    Console.WriteLine(carpim);
+                    break;
+                }
+                //else
+                //{
+                int sayi = int.Parse(girilenDeger);
+                #region 1. Algoritma
+                //if (sayi > 0)
+                //{
+                //    carpim *= sayi;
+                //}
+                #endregion
+                #region 2. Algoritma
+                if (sayi < 0)
+                    continue;
+                carpim *= sayi;
+                #endregion
+                //}
+            }
             #endregion
+            #region Continue Örnek 2
+            //1 ile 1000 arasında 7'nin katı olmayan sayıları ekrana yazdıralım
+            for (int i = 0; i <= 1000; i++)
+            {
+                if (i % 7 == 0)
+                    continue;
+                Console.WriteLine(i);
+            }
             #endregion
-
+            #region Return
+            //Metot içerisinde olduğu takdirde heryerde kullanılabilir/erişilebilir bir keyworddür
+            //İki işlevi görmektedir.
+            //1- Nerede çağrılıyorsa çağrılsın bulundugu metottan çıkış yapar yani metodu sonlandırır.
+            //2- Geriye değer döndürme sorumluluğunuda üstlenen bir keyworddür
+            while (true)
+            {
+                switch (10)
+                {
+                    case 10:
+                        return;
+                        break;
+                }
+            }
+            #endregion
+            #region Return Örnek
+            //kullanıcı 'c' tuşuna basana kadar sonsuz döngüde dönen uygulamayı yazınız.
+            while (true)
+            {
+                if (Console.ReadKey().KeyChar == 'c') //tuşu girdiğimiz zaman uygular readline kullandığımızda enter'a basınca uygular
+                {
+                    Console.WriteLine("Uygulama Sona Erdi");
+                    return;
+                }
+                Console.WriteLine("Uygulama çalışıyor...");
+            }
+            #endregion
         }
     }
 }
