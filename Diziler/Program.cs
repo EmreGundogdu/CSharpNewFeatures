@@ -72,8 +72,10 @@ namespace Diziler
             #region 4. Varyasyon
             string[] isimler3 = new string[3] { "", "", "" };//belirtilen(3) kadar süslü parantez içerisine değer girmek gerekir.
             #endregion
-            #region 5. Varyasyon
-
+            #region 5. Varyasyon - Önemli
+            int[] sayilar = new[] { 3, 5, 7 };
+            var sayilar2 = new[] { 3, 4, 5 }; //int türüne dönüşen bir dizi
+            var stringler = new[] { "sda", "ada", "dasda" }; //string türüne dönüşen bir dizi
             #endregion
             #endregion
         }
