@@ -200,6 +200,13 @@ namespace Keywords
             //for (int i = 0; i < 100; i++)
             //    Console.WriteLine(i);
             #endregion
+            #region Goto Kritik
+            b:
+            for (int i = 0; i < 100; i++)
+            {
+                goto b;
+            }
+            #endregion
         }
     }
 }
