@@ -207,6 +207,42 @@ namespace Keywords
                 goto b;
             }
             #endregion
+            #region Döngülerde Boş Scope Kullanmak İstemediğimiz Durumlarda ;(Noktalı Virgül) Operatörü İle Temiz Kod Yazımı
+            //while (true)
+            //{
+            //Normal scopelu yöntem
+            //}
+
+            //while (true) ;        //Scopesuz Yöntem
+
+
+            //for (int i = 0; i < length; i++)
+            //{
+            //SCOPELU YÖNTEM
+            //}
+
+            //for (; ; );           //Scopesuz yöntem
+
+
+            //do
+            //{
+            //scopeli yöntem
+            //} while (true);
+
+
+            //do;               //scopesiz yöntem
+            //while (true);
+            #endregion
+            #region İf Yapısında Boş Scope Kullanmak İstediğimiz Durumlarda ;(Noktalı Virgül) Operatörü İle Temiz Kod Yazımı
+            //if (true)
+            //{
+
+            //}
+            //if (true) ;
+            #endregion
+            #region MyRegion
+
+            #endregion
         }
     }
 }
