@@ -200,8 +200,18 @@ namespace Diziler
             #endregion
             #region Ranges and Indices - Range
             int[] _sayilar = { 3, 5, 7, 9, 1, 2, 321, 534, 5643, 457, 56, 78 };
-            Range range = 5..10;
-            var sonuclar = _sayilar[range];
+            //Range range = 5..10;
+            //var sonuclar = _sayilar[range];
+
+            //Range range = ..;  ---> Tüm diziye karşılık gelir.
+            //var _sayilar2 = _sayilar[range];
+            //_sayilar2[0] = 100;
+
+            //Range range = 5..^3;  ^3 = sağdan 3 sayıp geldikten sonra bir sonrakini alır
+            //var _sayilar2 = _sayilar[range];
+
+            Range range = ^8..^3; // ^3 = sağdan 3 sayıp geldikten sonra bir sonrakini alır
+            var _sayilar2 = _sayilar[range];
             #endregion
         }
     }
