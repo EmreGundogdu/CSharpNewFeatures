@@ -165,6 +165,14 @@ namespace Diziler
             for (int i = 0; i < isimler5.Length; i++)
                 Console.WriteLine(isimler5.GetValue(i));
             #endregion
+            #region Array Sınıfı IsReadonly Propertysi
+            //Bir dizinin sadece okunabilir olup olmaıdğını bool türde bildiren bir özelliktir
+            Console.WriteLine(isimler5.IsReadOnly);
+            #endregion
+            #region Array Sınıfı IsFixedSize Propertysi
+            //Bir veri kümesinin eleman sayısının sabit olup olmama durumunu IsFixedSize ile öğrenebilirz. Tüm dizilerde eleman sayısı sabit olduğu için sürekli true dönercektir. Örneğin ArrayList koleksiyonunda false dönmektedir.
+            Console.WriteLine(isimler5.IsFixedSize);
+            #endregion
         }
     }
 }
