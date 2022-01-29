@@ -125,15 +125,26 @@ namespace Diziler
                 Console.WriteLine(isimler4.GetValue(i));
             #endregion
             #region Array Sınıfı Copy Metodu
-            Console.WriteLine("***COPY***");
+            Console.WriteLine("******COPY******");
             //Elimizdeki bir dizinin verilerini bir başka diziye kopyalamamızı sağlayan bir fonksiyondur
-            Array isimler5 = new[] { "emre", "fatih", "serhat", "yaren" };
+            Array isimler5 = new[] { "Emre", "fatih", "serhat", "yaren" };
             string[] isimler6 = new string[isimler5.Length];
             Array.Copy(isimler5, isimler6, 4);
             for (int i = 0; i < isimler6.Length; i++)
             {
                 Console.WriteLine(isimler6[i]);
             }
+            #endregion
+            #region Array Sınıfı IndexOf Metodu
+            //Dizi içerisinde bir elemanın var olup olmadığını sorgulayabildiğimiz fonksiyondur
+            //Arama neticesinde ilgi değer varsa int olarak o değerin index numarasını döndürecektir. Yoksa -1 değerini döndürür
+            Console.WriteLine("IndexOf*************************");
+            int index = Array.IndexOf(isimler5, "Emre");
+            int index2 = Array.IndexOf(isimler5, "Emre", 0, 2);
+            if (index != -1)
+                Console.WriteLine("Var");
+            if (index2 == 0)
+                Console.WriteLine("Emre Var");
             #endregion
         }
     }
