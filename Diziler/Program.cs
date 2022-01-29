@@ -173,6 +173,10 @@ namespace Diziler
             //Bir veri kümesinin eleman sayısının sabit olup olmama durumunu IsFixedSize ile öğrenebilirz. Tüm dizilerde eleman sayısı sabit olduğu için sürekli true dönercektir. Örneğin ArrayList koleksiyonunda false dönmektedir.
             Console.WriteLine(isimler5.IsFixedSize);
             #endregion
+            #region Array Sınıfı Length Propertysi
+            Console.WriteLine(isimler5.Length);
+            #endregion
+
         }
     }
 }
