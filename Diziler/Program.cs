@@ -190,6 +190,14 @@ namespace Diziler
             Array dizi9 = Array.CreateInstance(typeof(int), 5, 3, 5, 6, 7, 8); //6. dereceli bir dizi ve değerleri 5,3,5,6,7,8'dır
             Console.WriteLine(dizi9.Rank);
             #endregion
+            #region Ranges and Indices - System Index
+            //Index = ^ işaretidir. Bu (^) Operatörü Index ile kullanılır
+            //Index index = ^3; //^ operatörü ile terisne index durumları kullanılırken index değerinin 0'dan değil 1'den başlar.
+            int[] sayilar3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //Index index3 = 5; --> Soldan 0 - (n-1)
+            Index index3 = ^4; //---> Sağdan 1'den başlar sola doğra gider.
+            Console.WriteLine(sayilar3[index3]);
+            #endregion
         }
     }
 }
