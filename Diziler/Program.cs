@@ -176,7 +176,16 @@ namespace Diziler
             #region Array Sınıfı Length Propertysi
             Console.WriteLine(isimler5.Length);
             #endregion
-
+            #region Array Sınıfı Rank Propertysi
+            int[,,] x = new int[3, 4, 5];//3. dereceği
+            Console.WriteLine(isimler5.Rank);
+            Console.WriteLine(x.Rank);
+            #endregion
+            #region Array Sınıfı CreateInstance Metodu İle Dizi Tanımalama
+            int[] yaslar3 = new int[3];
+            //Normalde yukarıda ki gibi yapılan dizi tanımlaması esasında arkaplanda Array sınıfının CreateInstance metodunu kullanmaktadır. Bizlerde bu metodu kullanarak fonksiyonel diziler oluşturabiliyoruz.
+            Array yaslar4 = Array.CreateInstance(typeof(int), 3);//int türünde ve 3 elemanlı
+            #endregion
         }
     }
 }
