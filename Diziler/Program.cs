@@ -146,6 +146,17 @@ namespace Diziler
             if (index2 == 0)
                 Console.WriteLine("Emre Var");
             #endregion
+            #region Array Sınıfı Reverse Metodu
+            //Elimizdeki dizinin elemanlarını tersine sıralayan bir fonksiyondur            
+            for (int i = 0; i < isimler5.Length; i++)
+            {
+                Console.WriteLine(isimler5.GetValue(i));
+            }
+            Array.Reverse(isimler5);
+            Console.WriteLine("Ters döndürülmüş olan isimler5 Arrayi;");
+            for (int i = 0; i < isimler5.Length; i++)
+                Console.WriteLine(isimler5.GetValue(i));
+            #endregion
         }
     }
 }
