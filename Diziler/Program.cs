@@ -78,6 +78,15 @@ namespace Diziler
             var stringler = new[] { "sda", "ada", "dasda" }; //string türüne dönüşen bir dizi
             #endregion
             #endregion
+            #region Array Sınıfı
+
+            Array yaslar2 = new int[3]; //Array = Dizi | Array yerine int[] yazabilirdik
+            //Dizi olarak tanımlanan değişkenler Array sınıfından türetilmektedirler.
+            //Dizilerde Array sınıfıdan gelen berlirli metotlar ve özellikler mevcuttur
+
+            int[] a = new int[5];//kendi türünde tutuyorsak indexer operatörü kullanılabilir.
+            Array a2 = new int[5];//Array türünde tutuyorsak indexer operatörü kullanılamaz
+            #endregion
         }
     }
 }
