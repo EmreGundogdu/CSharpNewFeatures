@@ -153,7 +153,15 @@ namespace Diziler
                 Console.WriteLine(isimler5.GetValue(i));
             }
             Array.Reverse(isimler5);
-            Console.WriteLine("Ters döndürülmüş olan isimler5 Arrayi;");
+            Console.WriteLine("*****************REVERSE******************");
+            for (int i = 0; i < isimler5.Length; i++)
+                Console.WriteLine(isimler5.GetValue(i));
+            #endregion
+            #region Array Sınıfı Sort Metodu
+            for (int i = 0; i < isimler5.Length; i++)
+                Console.WriteLine(isimler5.GetValue(i));
+            Array.Sort(isimler5);
+            Console.WriteLine("************SORT*************");
             for (int i = 0; i < isimler5.Length; i++)
                 Console.WriteLine(isimler5.GetValue(i));
             #endregion
