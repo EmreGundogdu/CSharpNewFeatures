@@ -213,6 +213,12 @@ namespace Diziler
             Range range = ^8..^3; // ^3 = sağdan 3 sayıp geldikten sonra bir sonrakini alır
             var _sayilar2 = _sayilar[range];
             #endregion
+            #region .. Operatörü 
+            int[] sayilar10 = { 3, 5, 7, 9, 1, 2, 31, 321, 534, 5643, 457, 56, 78 };
+            Index i1 = 5, i2 = 10;
+            Range _range = i1..i2;
+            var degeler = sayilar10[range];
+            #endregion
         }
     }
 }
