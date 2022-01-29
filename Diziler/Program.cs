@@ -220,7 +220,12 @@ namespace Diziler
             var degeler = sayilar10[range];
             #endregion
             #region ^ Operatörü
+            //^ Operatörünü kullanmak için Index türü ile çalışmak gerekir.
             int[] sayilar11 = { 3, 5, 7, 9, 1, 2, 31, 321, 534, 5643, 457, 56, 78 };
+            Index f = ^3; //Index türü kullanıldı
+            Console.WriteLine(sayilar11[f]); // 457 verdi
+
+            Range range3 = ^7..^2; // 31, 321, 534, 5643, 457 değerlerini bize verir
             #endregion
         }
     }
