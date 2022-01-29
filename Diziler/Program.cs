@@ -219,6 +219,9 @@ namespace Diziler
             Range _range = i1..i2;
             var degeler = sayilar10[range];
             #endregion
+            #region ^ Operatörü
+            int[] sayilar11 = { 3, 5, 7, 9, 1, 2, 31, 321, 534, 5643, 457, 56, 78 };
+            #endregion
         }
     }
 }
