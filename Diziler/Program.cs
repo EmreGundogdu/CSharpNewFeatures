@@ -227,6 +227,9 @@ namespace Diziler
 
             Range range3 = ^7..^2; // 31, 321, 534, 5643, 457 değerlerini bize verir
             #endregion
+            #region Çok Boyutlu Diziler
+
+            #endregion
         }
     }
 }
