@@ -198,6 +198,11 @@ namespace Diziler
             Index index3 = ^4; //---> Sağdan 1'den başlar sola doğra gider.
             Console.WriteLine(sayilar3[index3]);
             #endregion
+            #region Ranges and Indices - Range
+            int[] _sayilar = { 3, 5, 7, 9, 1, 2, 321, 534, 5643, 457, 56, 78 };
+            Range range = 5..10;
+            var sonuclar = _sayilar[range];
+            #endregion
         }
     }
 }
