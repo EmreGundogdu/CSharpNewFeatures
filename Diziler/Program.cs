@@ -186,6 +186,10 @@ namespace Diziler
             //Normalde yukarıda ki gibi yapılan dizi tanımlaması esasında arkaplanda Array sınıfının CreateInstance metodunu kullanmaktadır. Bizlerde bu metodu kullanarak fonksiyonel diziler oluşturabiliyoruz.
             Array yaslar4 = Array.CreateInstance(typeof(int), 3);//int türünde ve 3 elemanlı
             #endregion
+            #region CreateInstance ile Çok Boyutlu Dizi Tanımlama
+            Array dizi9 = Array.CreateInstance(typeof(int), 5, 3, 5, 6, 7, 8); //6. dereceli bir dizi ve değerleri 5,3,5,6,7,8'dır
+            Console.WriteLine(dizi9.Rank);
+            #endregion
         }
     }
 }
