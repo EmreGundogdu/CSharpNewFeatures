@@ -319,6 +319,15 @@ namespace Diziler
                 }
             }
             #endregion
+            #region Dizi İçerisinde Dizi Tanımlama/Düzensiz Diziler/Dizi Dizileri
+            //Düzensiz diziler herbir elemanı kendi içerisinde farklı bir dizi barındıran dizilerdir.
+            //Çok boyutlu dizilerden tek farkı, çok boyut dizilerin sütun sayılarının sabit, halbuki düzensiz dizilerin ise sütun sayılarının değişken olmasıdır
+            //type[][] --> type dizisi türünde bir dizi olucak
+            int[][] _sayilar6 = new int[3][]; //2 dereceli - 3 elemanlı
+            _sayilar6[0] = new int[3] { 3, 5, 7 }; //0. indexe böyle 3 elemanlı bir dizi verdik
+            _sayilar6[1] = new int[5] { 3, 5, 7, 321, 42 }; //1. indexe 5 elemanlı bir dizi veridk
+            _sayilar6[2] = new int[10] { 3, 5, 7, 32, 13, 11, 22, 32, 32, 23 }; //2. indexe 10 elemanlı bir dizi verdik
+            #endregion
         }
     }
 }
