@@ -228,7 +228,16 @@ namespace Diziler
             Range range3 = ^7..^2; // 31, 321, 534, 5643, 457 değerlerini bize verir
             #endregion
             #region Çok Boyutlu Diziler
-
+            //Çok boyutlu diziler oyun programlamada yahut yüksek istatiksel çalışmalarda kullanılan bir yapıdır
+            //type[,] -> Iki boyutlu bir dizi tanımlaması(Çift)
+            //type[,,,] -> 4 Boyutlu dizi tanımlaması
+            //Çok boyutlu dizilerde indexer içerisinde virgül ile tanımlama yapılmaktadır.
+            //Iki boyutlu diziler x ve y koordinatlarıyla taahhül edeceğimiz noktalardır
+            int[,] b = new int[3, 5];
+            #endregion
+            #region 2 Boyutludan Fazla Dizi Tanımalaması
+            //Iki dereceli'den fazla olan dizileri günlük haytta tahayyül etmek pek mümkün olmasada programatik olarak inşa edebilmekteyiz.
+            int[,,,] c = new int[3, 4, 5, 6]; 
             #endregion
         }
     }
