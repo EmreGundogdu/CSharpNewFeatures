@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{4E30A5B9-BD55-444A-AB06-B60D8F26D37A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Example", "Example\01.Example.csproj", "{4E30A5B9-BD55-444A-AB06-B60D8F26D37A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Degiskenler", "Degiskenler\Degiskenler.csproj", "{DA495651-B076-4561-AA25-D69F63157101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Degiskenler", "Degiskenler\02.Degiskenler.csproj", "{DA495651-B076-4561-AA25-D69F63157101}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sabitler", "Sabitler\Sabitler.csproj", "{0B300CA6-DE04-4F45-93A9-2AC62838882C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.Sabitler", "Sabitler\04.Sabitler.csproj", "{0B300CA6-DE04-4F45-93A9-2AC62838882C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeConversion", "TypeConversation\TypeConversion.csproj", "{188771C9-A8AA-4348-AA31-D74C14474943}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.TypeConversion", "TypeConversation\05.TypeConversion.csproj", "{188771C9-A8AA-4348-AA31-D74C14474943}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "Operators\Operators.csproj", "{EE2572C7-D1E2-48BD-A6EF-12427FF1FFCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Operators", "Operators\03.Operators.csproj", "{EE2572C7-D1E2-48BD-A6EF-12427FF1FFCB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkisKontrolYapilandirilmalari", "AkisKontrolYapilandirilmalari\AkisKontrolYapilandirilmalari.csproj", "{63352FAA-D88A-4EC4-B907-449CC399463F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.AkisKontrolYapilandirilmalari", "AkisKontrolYapilandirilmalari\06.AkisKontrolYapilandirilmalari.csproj", "{63352FAA-D88A-4EC4-B907-449CC399463F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HataKontrolMekanizmasi", "HataKontrolMekanizmasi\HataKontrolMekanizmasi.csproj", "{8547A979-0F01-4F16-8FD9-72283F36747B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.HataKontrolMekanizmasi", "HataKontrolMekanizmasi\09.HataKontrolMekanizmasi.csproj", "{8547A979-0F01-4F16-8FD9-72283F36747B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Donguler", "Donguler\Donguler.csproj", "{395FD57B-5696-4DDE-9E9C-03E06C1B3571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.Donguler", "Donguler\07.Donguler.csproj", "{395FD57B-5696-4DDE-9E9C-03E06C1B3571}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keywords", "Keywords\Keywords.csproj", "{8425F8E8-FA69-48F6-9537-2DBF7138CEEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Keywords", "Keywords\08.Keywords.csproj", "{8425F8E8-FA69-48F6-9537-2DBF7138CEEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{AB5733DF-BF59-421E-B54D-89EC520B2F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.Diziler", "Diziler\10.Diziler.csproj", "{AB5733DF-BF59-421E-B54D-89EC520B2F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.String", "String\11.String.csproj", "{A1E4E674-8567-45F1-B571-554150AC6528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{AB5733DF-BF59-421E-B54D-89EC520B2F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB5733DF-BF59-421E-B54D-89EC520B2F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB5733DF-BF59-421E-B54D-89EC520B2F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E4E674-8567-45F1-B571-554150AC6528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E4E674-8567-45F1-B571-554150AC6528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E4E674-8567-45F1-B571-554150AC6528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E4E674-8567-45F1-B571-554150AC6528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
