@@ -42,7 +42,6 @@ namespace String
             //EMPTY OLAN BİR DEĞER ÜZERİNDE İŞLEM GERÇEKLEŞEBİLİR.
             #endregion
             #endregion
-
             #region IsNullOrWhiteSpace
             //IsNullOrWhiteSpace fonksiyonu : Elimizdeki string ifadenin null, empty yahut boşluk karakterlerinden ibaret olma durumunda geriye bool true değerini döndüren bir fonksiyondur.
             string x3 = "           ";
@@ -51,6 +50,18 @@ namespace String
                 //Operasyon
             }
 
+            #endregion
+            #region String RAM(Heap) İlişkisi
+            string x4 = "dasdas";
+            #endregion
+            #region String - char Dizisi
+            //String ifadeler esasında bir char dizisidir. Yani yazılım açısıdan string ifade yoktur! Esasında karakterlerin bir araya gelmiş hali vardır. Dolayısıyla karakterleri bir araya getirebilecek yegane şey bir dizidir. String ifadeler yazılımsal açıdan bilgisayarda bir char dizisi olarak tarif edilmekte ve o şekilde tutulmaktadır.
+            //String ifadeler özünde bir char dizisi/yani dizi olmasından dolayı referans türlü değişkendir. Çünkü diziler referans türlüdürler. Yani nesnedirler. Yani heapte tutulur.
+            string metin = "wir sind da";
+            //String ifadeler char dizisi olduklarından dolayı yapısal olarak her bir karakter baştan sona otomati indexlenmektedir. Dolayısıyla string bir ifade üzerinde indexer operatöründe kullanabilmekteyiz
+            Console.WriteLine(metin[0]);
+            Console.WriteLine(metin.Length);
+            // Array array = metin; String özünde bir char dizisi olabilir ama yapısal olarak yine de string oldupu için Array referansına atılamaz, Array ile karşılanamaz
             #endregion
         }
     }
