@@ -239,7 +239,7 @@ namespace Diziler
             //Iki dereceli'den fazla olan dizileri günlük haytta tahayyül etmek pek mümkün olmasada programatik olarak inşa edebilmekteyiz.
             int[,,,] c = new int[3, 4, 5, 6];
             #endregion
-            #region Tanımlanmış Çok Boyutlu Diziye Değer Atama
+            #region Tanımlanmış Çok Boyutlu Diziye Değer Atama Ve Okuma
             #region 2. Dereceli Dizi Örneklendirme
             int[,] d = new int[3, 4];
             d[1, 2] = 5; //x'i 1 | y'si 2 olan konuma değer atamış olduk
@@ -284,9 +284,41 @@ namespace Diziler
 
             Console.WriteLine(h.Rank);//kaç dereceli olduğunu gösterir
             Console.WriteLine(h.Length); //toplam hücre sayısına göre belirlenir. Yani h dizinde oluşturduğumuz (4*3) bize sonucu verir.
-            #endregion
-            #endregion
 
+            Console.WriteLine(h.GetLength(0));  //4
+            Console.WriteLine(h.GetLength(1));  //3
+            #endregion
+            #endregion
+            #region Çok Boyutlu Dizilerdeki Verileri İç İçe Döngülerle Ekrana Yazdırma
+            int[,,] _sayilar3 = new int[2, 2, 4];
+            _sayilar3[0, 0, 0] = 1;
+            _sayilar3[0, 0, 1] = 2;
+            _sayilar3[0, 0, 2] = 3;
+            _sayilar3[0, 0, 3] = 4;
+            _sayilar3[0, 1, 0] = 5;
+            _sayilar3[0, 1, 1] = 6;
+            _sayilar3[0, 1, 2] = 7;
+            _sayilar3[0, 1, 3] = 8;
+            _sayilar3[1, 0, 0] = 9;
+            _sayilar3[1, 0, 1] = 10;
+            _sayilar3[1, 0, 2] = 11;
+            _sayilar3[1, 0, 3] = 12;
+            _sayilar3[1, 1, 0] = 13;
+            _sayilar3[1, 1, 1] = 14;
+            _sayilar3[1, 1, 2] = 15;
+            _sayilar3[1, 1, 3] = 16;
+            for (int i5 = 0; i5 < _sayilar3.GetLength(0); i5++)
+            {
+                for (int j5 = 0; j5 < _sayilar3.GetLength(1); j5++)
+                {
+                    for (int p5 = 0; p5 < _sayilar3.GetLength(2); p5++)
+                    {
+                        Console.Write(_sayilar3[i5, j5, p5] + "           ");
+                    }
+                    Console.WriteLine("");
+                }
+            }
+            #endregion
         }
     }
 }
