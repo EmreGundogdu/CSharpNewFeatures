@@ -136,13 +136,29 @@ namespace String
             //Eğer ki illa ben bir keyword ismi kullanıcam diyorsak eğer @ kullanılabilir.
             int @void = 5;
             int @class = 10;
+            int @namespace = 15;
             #endregion
-            #region 2. Kullanım
-
+            #region 2. Kullanım            
+            //string metin3 = "Hava çok \"güzel\"";
+            string metin4 = @"Hava çok ""güzel""";
             #endregion
             #region 3. Kullanım
-
+            string metin5 = "Bugün" +
+                " otuz" +
+                " ocak";
+            string metin6 = @"Bugün 
+                                otuz
+                                ocak"; //Bu yöntem kullanılır
             #endregion
+            #endregion
+            #region String Interpolation İle Verbatim Strings Birlikteliği (C# 8.0)
+            string isim2 = "Emre", soyisim2 = "Gündoğdu", siparisNo = "123123";
+            int fiyat = 100;
+
+            //ÖRNEK
+            string mailMessage = @$"Merhaba {isim2} {soyisim2}\n
+                                    {siparisNo} nolu sipariş talebiniz tarafımızca alınmıştır. \n
+                                    Fiyat : {fiyat}";
             #endregion
         }
     }
