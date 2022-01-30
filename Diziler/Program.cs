@@ -279,10 +279,11 @@ namespace Diziler
             h[1, 1] = 6;
             h[1, 2] = 2;
             h[3, 2] = 8;
-            Console.WriteLine(h[1,0]); //9
-            Console.WriteLine(h[0,2]); //7
+            Console.WriteLine(h[1, 0]); //9
+            Console.WriteLine(h[0, 2]); //7
 
             Console.WriteLine(h.Rank);//kaç dereceli olduğunu gösterir
+            Console.WriteLine(h.Length); //toplam hücre sayısına göre belirlenir. Yani h dizinde oluşturduğumuz (4*3) bize sonucu verir.
             #endregion
             #endregion
 
