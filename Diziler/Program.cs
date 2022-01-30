@@ -270,6 +270,18 @@ namespace Diziler
                 {20,23,13 }
             };
             #endregion
+            #region Çok Boyutlu Dizilerden Değer Okuma
+            int[,] h = new int[4, 3];
+            h[0, 0] = 3;
+            h[0, 1] = 5;
+            h[0, 2] = 7;
+            h[1, 0] = 9;
+            h[1, 1] = 6;
+            h[1, 2] = 2;
+            h[3, 2] = 8;
+            Console.WriteLine(h[1,0]); //9
+            Console.WriteLine(h[0,2]); //7
+            #endregion
             #endregion
 
         }
