@@ -97,7 +97,8 @@ namespace String
             bool medeniHal = false;
             //Console.WriteLine("Tc No : ......... olan .... ........ şahsın bilgileri | Yaş : .. | Medeni Hal : .....");
             #region  + Operatörü
-            Console.WriteLine("Tc No : " + tcNo + " olan " + isim + soyisim + " Şahsın Bilgileri | Yaş : " + yas + "| Medeni Hal : " + medeniHal);
+            Console.WriteLine("Tc No : " + tcNo + " olan " + isim + soyisim + " Şahsın Bilgileri | Yaş : " + yas + "| Medeni Hal : " + (medeniHal ? "Evli" : "Bekar"));
+            //+ ile string formatlandırmalarında ternary operatörü kullanılıyorsa bunu parantez içerisine almamız gerekir.
             #endregion
             #endregion
         }
