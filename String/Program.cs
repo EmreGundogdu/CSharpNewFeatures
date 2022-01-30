@@ -156,9 +156,11 @@ namespace String
             int fiyat = 100;
 
             //ÖRNEK
-            string mailMessage = @$"Merhaba {isim2} {soyisim2}\n
-                                    {siparisNo} nolu sipariş talebiniz tarafımızca alınmıştır. \n
-                                    Fiyat : {fiyat}";
+            string mailMessage = 
+@$"Merhaba {isim2} {soyisim2}
+{siparisNo} nolu sipariş talebiniz tarafımızca alınmıştır. 
+Fiyat : {fiyat}";
+            Console.WriteLine(mailMessage);
             #endregion
         }
     }
