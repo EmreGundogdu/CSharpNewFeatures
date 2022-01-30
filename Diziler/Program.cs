@@ -327,6 +327,27 @@ namespace Diziler
             _sayilar6[0] = new int[3] { 3, 5, 7 }; //0. indexe böyle 3 elemanlı bir dizi verdik
             _sayilar6[1] = new int[5] { 3, 5, 7, 321, 42 }; //1. indexe 5 elemanlı bir dizi veridk
             _sayilar6[2] = new int[10] { 3, 5, 7, 32, 13, 11, 22, 32, 32, 23 }; //2. indexe 10 elemanlı bir dizi verdik
+
+            Console.WriteLine(_sayilar6[0][1]); //0. indexteki 1. dizinin elemanlarını getir. bize 5 sonucu vercek
+            _sayilar6[0][0] = 13;
+            Console.WriteLine(_sayilar6[0][0]); //0. indexteki 0. dizinin elemanlarını getir. bize 13 sonucu vercek
+
+            Console.WriteLine(_sayilar6.Length); //Ana dizi eleman sayısını verir 3 sonucu alırız
+            //Length : Düzensiz dizinin eleman sayısını getirir. Bu bize total eleman sayısını vermez. Çok boyutlu dizilerde olduğu gibi düzensiz diziler başlı başına farklı bir dizi yapısı değildir. Normal dizi yappılanmasıdır. Lakin içerisin de dizi barındıran bir dizidir. Haliyle eleman sayısını dönrürür.
+            //İçteki dizilerin eleman sayılarını totalde elde edebilmek için herbirini toplamamız gerekir.
+
+            Console.WriteLine(_sayilar6[0].Length + _sayilar6[1].Length + _sayilar6[2].Length);
+            Console.WriteLine("DÜZENSİZ DİZİLER VE DÖNGÜ İÇERİSİNDE KULLANILMASI");
+            #region Düzensiz Diziler Ve Döngü
+            for (int i = 0; i < _sayilar6.Length; i++)
+            {
+                for (int j = 0; j < _sayilar6[i].Length; j++)
+                {
+                    Console.Write(_sayilar6[i][j] + "  -  ");
+                }
+                Console.WriteLine("");
+            }
+            #endregion
             #endregion
         }
     }
