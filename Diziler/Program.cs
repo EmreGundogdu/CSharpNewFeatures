@@ -281,6 +281,8 @@ namespace Diziler
             h[3, 2] = 8;
             Console.WriteLine(h[1,0]); //9
             Console.WriteLine(h[0,2]); //7
+
+            Console.WriteLine(h.Rank);//kaç dereceli olduğunu gösterir
             #endregion
             #endregion
 
