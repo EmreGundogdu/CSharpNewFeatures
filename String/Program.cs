@@ -130,6 +130,20 @@ namespace String
             Console.WriteLine("İsim\tSoyisim\tAdres\t");
             Console.WriteLine("\n");
             #endregion
+            #region @(Verbatim Strings) Operatörü
+            #region 1. Kullanım
+            //Bir değişken yahut metot vs. gibi yapılanma isimlerinin programatik bir keyworde karşılık gelmesi mümkün değildir. Derleyici hatası verir
+            //Eğer ki illa ben bir keyword ismi kullanıcam diyorsak eğer @ kullanılabilir.
+            int @void = 5;
+            int @class = 10;
+            #endregion
+            #region 2. Kullanım
+
+            #endregion
+            #region 3. Kullanım
+
+            #endregion
+            #endregion
         }
     }
 }
