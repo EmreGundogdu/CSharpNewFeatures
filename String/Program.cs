@@ -65,11 +65,31 @@ namespace String
             #endregion
             #region Döngülerle String Metin İçerisindeki Herbir Karaktere Ulaşma
             string metin2 = "wir sind da...";
-            for (int i = 0; i < metin2.Length; i++)
+            //for (int i = 0; i < metin2.Length; i++)
+            //{
+            //    if (metin2[i] == 'r')
+            //        Console.WriteLine(i);
+            //}
+            int i = 0;
+            do
             {
                 if (metin2[i] == 'r')
                     Console.WriteLine(i);
-            }
+                i++;
+            } while (i < metin2.Length);
+            #endregion
+            #region String İfadelerde + Operatörü
+            //String ifadelerde + operatörü kullanılabilmektedir
+            //İki string ifade arasında birleştirme görevi görür
+            string a2 = "Merhaba", b2 = "Dünya";
+            Console.WriteLine(a + b);
+            //Bir string ifade ile herhangi bir tür + operatörü ile işleme tabi tutulabilir.
+            //+ operatörü string bir ifadeyle herhangi bir türdeki ifadeleri işleme tabi tutarken object + string davranışı sergileyecek ve sonuç olarak geriye string değer döndürecektir
+            //Dolayısıyla herhangi bir ifadeyi string'e dönüştürebilmek için o ifadeyi + "" ile işleme tutmak yeterli olabilir.
+            int a3 = 5;
+            // a2 + a3;  -> string + int = string
+
+            Console.WriteLine(5 + 7 + 20 + "emre");
             #endregion
         }
     }
