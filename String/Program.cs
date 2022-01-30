@@ -42,6 +42,16 @@ namespace String
             //EMPTY OLAN BİR DEĞER ÜZERİNDE İŞLEM GERÇEKLEŞEBİLİR.
             #endregion
             #endregion
+
+            #region IsNullOrWhiteSpace
+            //IsNullOrWhiteSpace fonksiyonu : Elimizdeki string ifadenin null, empty yahut boşluk karakterlerinden ibaret olma durumunda geriye bool true değerini döndüren bir fonksiyondur.
+            string x3 = "           ";
+            if (!string.IsNullOrWhiteSpace(x3))
+            {
+                //Operasyon
+            }
+
+            #endregion
         }
     }
 }
