@@ -237,7 +237,30 @@ namespace Diziler
             #endregion
             #region 2 Boyutludan Fazla Dizi Tanımalaması
             //Iki dereceli'den fazla olan dizileri günlük haytta tahayyül etmek pek mümkün olmasada programatik olarak inşa edebilmekteyiz.
-            int[,,,] c = new int[3, 4, 5, 6]; 
+            int[,,,] c = new int[3, 4, 5, 6];
+            #endregion
+            #region Tanımlanmış Çok Boyutlu Diziye Değer Atama
+            #region 2. Dereceli Dizi Örneklendirme
+            int[,] d = new int[3, 4];
+            d[1, 2] = 5; //x'i 1 | y'si 2 olan konuma değer atamış olduk
+            d[2, 3] = 10; //x'i 2 | y'si 3 olan konuma değer atamış olduk
+            #endregion
+            #region Çok Dereceli Dizi Örneklendirme
+            int[,,,] e = new int[3, 4, 5, 6];
+            e[0, 0, 0, 0] = 15; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 15 değerini ata
+            e[0, 0, 0, 1] = 16; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 16 değerini ata
+            e[0, 0, 0, 2] = 17; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 17 değerini ata
+            e[0, 0, 0, 3] = 18; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 18 değerini ata
+            e[0, 0, 0, 4] = 18; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 18 değerini ata
+            e[0, 0, 0, 5] = 19; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 19 değerini ata
+            e[1, 0, 0, 5] = 10; //1. derecenin & 2. derecenin ve 3. derecenin 4.nün birinci hücresine 15 değerini ata
+            #endregion
+            #region 3. Dereceli Örnek
+            int[,,] g = new int[3, 4, 5];
+            g[0, 0, 1] = 15; //x'i 0 y'si 0 z'si 1
+            g[2, 3, 2] = 16; //x'i 2 y'si 3 z'si 2
+            g[1, 3, 4] = 17; //x'i 1 y'si 3 z'si 4
+            #endregion
             #endregion
         }
     }
