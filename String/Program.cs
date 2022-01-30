@@ -101,7 +101,11 @@ namespace String
             //+ ile string formatlandırmalarında ternary operatörü kullanılıyorsa bunu parantez içerisine almamız gerekir.
             #endregion
             #region string.Format Fonksiyonu
-            string.Format("Tc No : {0} olan {1} {2} şahsın bilgileri | Yaş : {3} | Medeni Hal : {4}", tcNo, isim, soyisim, medeniHal ? "Evli" : "Bekar"); //indexleri belirtip metod içerisine indexlerin karşılığını yazıyoruz
+            string sonuc = string.Format("Tc No : {0} olan {1} {2} şahsın bilgileri | Yaş : {3} | Medeni Hal : {4}", tcNo, isim, soyisim, yas, medeniHal ? "Evli" : "Bekar"); //indexleri belirtip metod içerisine indexlerin karşılığını yazıyoruz
+            Console.WriteLine(sonuc);
+            #endregion
+            #region $(String Interpolation) (C# 6.0)
+            Console.WriteLine($"Tc No : {tcNo} olan {isim} {soyisim} şahsın bilgileri | Yaş : {yas} | Medeni Hal : {(medeniHal ? "Evli" : "Bekar")}");
             #endregion
             #endregion
         }
