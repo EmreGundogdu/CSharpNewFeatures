@@ -105,8 +105,30 @@ namespace String
             Console.WriteLine(sonuc);
             #endregion
             #region $(String Interpolation) (C# 6.0)
+            //String Interpolation yapısal olarak arkaplanda string.Format fonksiyonuyla sekillenen bir operatördür. Ternary kullanıyorsak parantez içerisine almamız gerekir.
             Console.WriteLine($"Tc No : {tcNo} olan {isim} {soyisim} şahsın bilgileri | Yaş : {yas} | Medeni Hal : {(medeniHal ? "Evli" : "Bekar")}");
             #endregion
+            #endregion
+            #region String Kaçış Karakterleri
+            /*
+             *  \o -> Null sonalndıram karakteridir. Genel olarak dosya veya veri kanalının bitişini belirtmek için kullanılır
+             *  \a -> Bip sesini çıkartan karakterdir
+             *  \b -> Backspace-Geri-Önceki Karakteri Silme
+             *  \t -> Tab
+             *  \r -> Satır Başı
+             *  \n -> Bir alt satıra iner
+             *  \v -> Dikey tab
+             *  \f -> Sayfa ilerleme
+             *  \" -> Çift tırnak
+             *  \' -> Tek tırnak
+             *  / -> Backslash
+             */
+            Console.WriteLine("\"Bugün hava çok güzel\""); //"Bugün hava çok güzel" yani çift tırnak içerisinde mesja yazdırabildik
+            Console.WriteLine("Emre\\Gündoğdu");
+            Console.WriteLine("\a");
+            Console.WriteLine("abc\b");
+            Console.WriteLine("İsim\tSoyisim\tAdres\t");
+            Console.WriteLine("\n");
             #endregion
         }
     }
