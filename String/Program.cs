@@ -100,6 +100,9 @@ namespace String
             Console.WriteLine("Tc No : " + tcNo + " olan " + isim + soyisim + " Şahsın Bilgileri | Yaş : " + yas + "| Medeni Hal : " + (medeniHal ? "Evli" : "Bekar"));
             //+ ile string formatlandırmalarında ternary operatörü kullanılıyorsa bunu parantez içerisine almamız gerekir.
             #endregion
+            #region string.Format Fonksiyonu
+            string.Format("Tc No : {0} olan {1} {2} şahsın bilgileri | Yaş : {3} | Medeni Hal : {4}", tcNo, isim, soyisim, medeniHal ? "Evli" : "Bekar"); //indexleri belirtip metod içerisine indexlerin karşılığını yazıyoruz
+            #endregion
             #endregion
         }
     }
