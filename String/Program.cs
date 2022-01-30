@@ -63,6 +63,14 @@ namespace String
             Console.WriteLine(metin.Length);
             // Array array = metin; String özünde bir char dizisi olabilir ama yapısal olarak yine de string oldupu için Array referansına atılamaz, Array ile karşılanamaz
             #endregion
+            #region Döngülerle String Metin İçerisindeki Herbir Karaktere Ulaşma
+            string metin2 = "wir sind da...";
+            for (int i = 0; i < metin2.Length; i++)
+            {
+                if (metin2[i] == 'r')
+                    Console.WriteLine(i);
+            }
+            #endregion
         }
     }
 }
