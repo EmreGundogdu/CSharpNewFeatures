@@ -91,6 +91,15 @@ namespace String
 
             Console.WriteLine(5 + 7 + 20 + "emre");
             #endregion
+            #region String Formatlandırma
+            string isim = "Emre", soyisim = "Gündoğdu", tcNo = "1234567890";
+            int yas = 21;
+            bool medeniHal = false;
+            //Console.WriteLine("Tc No : ......... olan .... ........ şahsın bilgileri | Yaş : .. | Medeni Hal : .....");
+            #region  + Operatörü
+            Console.WriteLine("Tc No : " + tcNo + " olan " + isim + soyisim + " Şahsın Bilgileri | Yaş : " + yas + "| Medeni Hal : " + medeniHal);
+            #endregion
+            #endregion
         }
     }
 }
