@@ -261,7 +261,17 @@ namespace Diziler
             g[2, 3, 2] = 16; //x'i 2 y'si 3 z'si 2
             g[1, 3, 4] = 17; //x'i 1 y'si 3 z'si 4
             #endregion
+            #region Varyasyonla Değer Atama
+            int[,] t =
+            {
+                {3,5,7 }, //3 boyutlu dizi olduğu ilk verilen değerde belirlendi
+                {5,6,7 },
+                {15,36,27 },
+                {20,23,13 }
+            };
             #endregion
+            #endregion
+
         }
     }
 }
