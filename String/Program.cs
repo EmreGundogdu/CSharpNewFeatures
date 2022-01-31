@@ -173,6 +173,13 @@ Fiyat : {fiyat}";
             #region StartsWith            
             Console.WriteLine(metin7.StartsWith("Wir"));
             #endregion
+            #region EndsWith
+            Console.WriteLine(metin7.EndsWith("da"));
+            #endregion
+            #region Equals
+            string metin8 = "Wir sind nich hier";
+            Console.WriteLine(metin7.Equals(metin8));
+            #endregion
             #endregion
         }
     }
