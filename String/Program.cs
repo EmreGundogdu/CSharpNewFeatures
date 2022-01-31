@@ -162,6 +162,18 @@ namespace String
 Fiyat : {fiyat}";
             Console.WriteLine(mailMessage);
             #endregion
+            #region String Fonksiyonları
+            string metin7 = "Wir sind da";
+            #region Contains
+            bool sonuc2 = metin7.Contains("da");
+            bool sonuc3 = metin7.Contains("wa");
+            Console.WriteLine(sonuc2);
+            Console.WriteLine(sonuc3);
+            #endregion
+            #region StartsWith
+
+            #endregion
+            #endregion
         }
     }
 }
