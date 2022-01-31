@@ -230,7 +230,7 @@ Fiyat : {fiyat}";
             #region Substring
             //Metinsel ifadenin belirli bir aralığını elde etmemizi sağlar
             Console.WriteLine(metin7.Substring(5));  //5. indexten sonuna kadar tüm değerleri getir
-            Console.WriteLine(metin7.Substring(5, 10));  //5. indexten balayacak 10 karakter getirir.
+            Console.WriteLine(metin7.Substring(5, 2));  //5. indexten balayacak 10 karakter getirir.
             #endregion
             #region ToLower
             //Elimizdeki metinsel ifadenin tüm karakterlerini küçük karakter olarak düzenler
@@ -264,7 +264,36 @@ Fiyat : {fiyat}";
             #endregion
             #endregion
             #region 2. Örnek
-
+            //Girilen Metnin İçerisinde Kaç Adet "n" Karakterinin Geçtiğini Hesaplayalım
+            Console.WriteLine("Lütfen bir metin giriniz");
+            string metin8 = Console.ReadLine();
+            int adet = 0;
+            for (int j = 0; j < metin8.Length; j++)
+            {
+                if (metin8[j] == 'n')
+                    adet++;
+            }
+            Console.WriteLine(adet);
+            #endregion
+            #region 3. Örnek 
+            //Girilen metindekş kelimenin sayısını hesaplayalım
+            Console.WriteLine("Lütfen bir metin giriniz");
+            string metin9 = Console.ReadLine();
+            #region 1. Çözüm
+            string[] keliemler = metin9.Split(' ');
+            Console.WriteLine(keliemler.Length);
+            #endregion
+            #region 2. Çözüm
+            int adet1 = 0;
+            while (true)
+            {
+                int index = metin9.IndexOf(' ');
+                if (index == -1)
+                    break;
+                metin9 = metin9.Substring(index + 1);
+            }
+            Console.WriteLine(adet); ;
+            #endregion
             #endregion
             #endregion
         }
