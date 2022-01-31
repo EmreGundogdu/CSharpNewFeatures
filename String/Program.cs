@@ -250,7 +250,20 @@ Fiyat : {fiyat}";
             #region TrimStart
             Console.WriteLine("       emre".TrimStart());
             #endregion
-            #region MyRegion
+            #region Örnek
+            //Adımızı ilkten 3. Soyadımızın sondan 5. karakterini getirelim
+            string adSoyad = "Emre Gündoğdu";
+            #region 1. Çözüm
+            Console.WriteLine(adSoyad[2]);
+            Console.WriteLine(adSoyad[adSoyad.Length - 5]); //sondan 5.
+            #endregion
+            #region 2. Çözüm
+            string aralik = adSoyad[2..^4];
+            Console.WriteLine(aralik[0]);
+            Console.WriteLine(aralik[aralik.Length - 1]);
+            #endregion
+            #endregion
+            #region 2. Örnek
 
             #endregion
             #endregion
