@@ -177,8 +177,16 @@ Fiyat : {fiyat}";
             Console.WriteLine(metin7.EndsWith("da"));
             #endregion
             #region Equals
-            string metin8 = "Wir sind nich hier";
-            Console.WriteLine(metin7.Equals(metin8));
+            Console.WriteLine(metin7.Equals("Hallo"));
+            #endregion
+            #region Compare
+            //Metinsel ifadeleri karşılaştırmamızı ve sonuç olarak int türde değer elde etmemizi sağlar
+            //0 : Her iki değer birbirine eşittir
+            //1 : Soldaki sağdakinden alfanumerik olarak büyük
+            //-1 : Soldaki sağdakinden alfanumerik olarka küçük
+            Console.WriteLine(string.Compare(metin7, "R"));
+            Console.WriteLine(string.Compare(metin7, "a"));
+            Console.WriteLine(string.Compare(metin7, metin7));
             #endregion
             #endregion
         }
