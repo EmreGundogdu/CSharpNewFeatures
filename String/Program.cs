@@ -193,6 +193,16 @@ Fiyat : {fiyat}";
             Console.WriteLine(metin7.CompareTo("a"));
             Console.WriteLine(metin7.CompareTo(metin7));
             #endregion
+            #region IndexOf
+            //Verilen değerin string ifade içerisinde olup olmamasını geriye int döndüren bir fonksiyondur
+            //Geriye int olarak indexNo'yu döndürür.
+            //Eğer sonuç yoksa -1 değerini döndürür
+            Console.WriteLine(metin7.IndexOf("nd"));
+            Console.WriteLine(metin7.IndexOf("r"));
+            Console.WriteLine(metin7.IndexOf("da"));
+            Console.WriteLine(metin7.IndexOf(" "));
+            //IndexOf ilk eşleşen değerin indexini döndürür
+            #endregion
             #endregion
         }
     }
