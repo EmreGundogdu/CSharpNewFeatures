@@ -233,10 +233,25 @@ Fiyat : {fiyat}";
             Console.WriteLine(metin7.Substring(5, 10));  //5. indexten balayacak 10 karakter getirir.
             #endregion
             #region ToLower
+            //Elimizdeki metinsel ifadenin tüm karakterlerini küçük karakter olarak düzenler
             Console.WriteLine(metin7.ToLower());
             #endregion
             #region ToUpper
+            //Elimizdeki metinsel ifadenin tüm karakterlerini büyük karakter olarak düzenler
             Console.WriteLine(metin7.ToUpper());
+            #endregion
+            #region Trim
+            //Metinsel ifadelerin varsa solundaki ve sağındaki boşluk karakterlerni temizleyen bir fonksiyondur
+            Console.WriteLine("      emre    ".Trim());
+            #endregion
+            #region TrimEnd
+            Console.WriteLine("emre         ".TrimEnd());
+            #endregion
+            #region TrimStart
+            Console.WriteLine("       emre".TrimStart());
+            #endregion
+            #region MyRegion
+
             #endregion
             #endregion
         }
