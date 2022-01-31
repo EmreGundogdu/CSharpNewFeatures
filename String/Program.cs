@@ -188,6 +188,11 @@ Fiyat : {fiyat}";
             Console.WriteLine(string.Compare(metin7, "a"));
             Console.WriteLine(string.Compare(metin7, metin7));
             #endregion
+            #region CompareTo
+            Console.WriteLine(metin7.CompareTo("Z"));
+            Console.WriteLine(metin7.CompareTo("a"));
+            Console.WriteLine(metin7.CompareTo(metin7));
+            #endregion
             #endregion
         }
     }
