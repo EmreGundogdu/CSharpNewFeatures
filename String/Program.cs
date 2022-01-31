@@ -156,7 +156,7 @@ namespace String
             int fiyat = 100;
 
             //ÖRNEK
-            string mailMessage = 
+            string mailMessage =
 @$"Merhaba {isim2} {soyisim2}
 {siparisNo} nolu sipariş talebiniz tarafımızca alınmıştır. 
 Fiyat : {fiyat}";
@@ -170,8 +170,8 @@ Fiyat : {fiyat}";
             Console.WriteLine(sonuc2);
             Console.WriteLine(sonuc3);
             #endregion
-            #region StartsWith
-
+            #region StartsWith            
+            Console.WriteLine(metin7.StartsWith("Wir"));
             #endregion
             #endregion
         }
