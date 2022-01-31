@@ -215,6 +215,12 @@ Fiyat : {fiyat}";
             //Insertte oldugu gibi ilgili fonksiyon yapmış olduğu işlem neticesinde yeni değeri üreterek bizlere string olarak dönecektir. Elimizdeki veri değişmeyecektir.
             Console.WriteLine(metin7.Remove(8)); //8. indexten sonraki tüm değerleri sil
             Console.WriteLine(metin7.Remove(8, 2)); //8. indexten başla 2 adet sil
+            Console.WriteLine(metin7);
+            #endregion
+            #region Replace
+            //Elimizdeki metinsel ifadede belirtlilen değerleri yahut karakterleri, belirtilen diğer değerler ya da karakterler ile değiştirmemizi sağlayan bir fonksiyondur.
+            Console.WriteLine(metin7.Replace(" ", "-"));
+            //Sonuç olarak string değer üretecek ve geriye döndürecektir.
             #endregion
             #endregion
         }
