@@ -225,7 +225,18 @@ Fiyat : {fiyat}";
             #region Split
             //Metinsel ifadeyi verilen değeri ayraç olarak kullanıp, parçayalan ve sonucu string dizisi olarak döndüren bir fonksiyondur.
             string[] dizi = metin7.Split(' ');
-            string[] dizi2 = metin7.Split(' ','i');
+            string[] dizi2 = metin7.Split(' ', 'i');
+            #endregion
+            #region Substring
+            //Metinsel ifadenin belirli bir aralığını elde etmemizi sağlar
+            Console.WriteLine(metin7.Substring(5));  //5. indexten sonuna kadar tüm değerleri getir
+            Console.WriteLine(metin7.Substring(5, 10));  //5. indexten balayacak 10 karakter getirir.
+            #endregion
+            #region ToLower
+            Console.WriteLine(metin7.ToLower());
+            #endregion
+            #region ToUpper
+            Console.WriteLine(metin7.ToUpper());
             #endregion
             #endregion
         }
