@@ -203,6 +203,19 @@ Fiyat : {fiyat}";
             Console.WriteLine(metin7.IndexOf(" "));
             //IndexOf ilk eşleşen değerin indexini döndürür
             #endregion
+            #region Insert
+            //Elimizdeki metinsel ifadeye bir değer dahil etmemizi/eklememizi sağlayan bir fonksiyondur.
+            string eklenmisMetin = metin7.Insert(11, " ,Hallo");
+            Console.WriteLine(eklenmisMetin);
+            //İlgili ekleme operasyonu gerçekleştikten sonra eklenmiş hali string olarak döndürülecektir. Lakin metin orjinal verisi ayri bir şekilde tutulacaktır
+
+            #endregion
+            #region Remove
+            //Metinsel ifadede indexel olarak verilen değer silen bir fonksiyondur
+            //Insertte oldugu gibi ilgili fonksiyon yapmış olduğu işlem neticesinde yeni değeri üreterek bizlere string olarak dönecektir. Elimizdeki veri değişmeyecektir.
+            Console.WriteLine(metin7.Remove(8)); //8. indexten sonraki tüm değerleri sil
+            Console.WriteLine(metin7.Remove(8, 2)); //8. indexten başla 2 adet sil
+            #endregion
             #endregion
         }
     }
