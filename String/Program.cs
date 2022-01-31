@@ -222,6 +222,11 @@ Fiyat : {fiyat}";
             Console.WriteLine(metin7.Replace(" ", "-"));
             //Sonuç olarak string değer üretecek ve geriye döndürecektir.
             #endregion
+            #region Split
+            //Metinsel ifadeyi verilen değeri ayraç olarak kullanıp, parçayalan ve sonucu string dizisi olarak döndüren bir fonksiyondur.
+            string[] dizi = metin7.Split(' ');
+            string[] dizi2 = metin7.Split(' ','i');
+            #endregion
             #endregion
         }
     }
