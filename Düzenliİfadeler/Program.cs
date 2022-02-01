@@ -107,13 +107,18 @@ namespace Düzenliİfadeler
 
             //(546) 873 65 21 ----> Böyle bir numara verilmesini istersek
             //[(]\d{3}[)]\s\d{3}\s\d{2}\s\d{2}
-            string text = "(546) 873 65 21";
+            string text = "123A";
             Regex regex = new Regex(@"\d{3}[A-E]"); 
-            Regex regex2 = new Regex(@"[(]\d{3}[)]\s\d{3}\s\d{2}\s\d{2}"); 
-            Match match = regex2.Match(text);
+            //Regex regex2 = new Regex(@"[(]\d{3}[)]\s\d{3}\s\d{2}\s\d{2}"); 
+            Match match = regex.Match(text);
             Console.WriteLine(match.Success);
             #endregion
             #endregion
+
+            Console.WriteLine($"Success : {match.Success}");
+            Console.WriteLine($"Value : {match.Value}");
+            Console.WriteLine($"Index : {match.Index}");
+            Console.WriteLine($"Length : {match.Length}");
         }
     }
 }
