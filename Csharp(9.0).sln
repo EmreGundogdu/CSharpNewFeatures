@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.Diziler", "Diziler\10.Di
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.String", "String\11.String.csproj", "{A1E4E674-8567-45F1-B571-554150AC6528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.DizilerdeVeriselPerformans", "12.DizilerdeVeriselPerformans\12.DizilerdeVeriselPerformans.csproj", "{41FB417B-4A4D-476C-93BE-A14F9547E93B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.DizilerdeVeriselPerformans", "12.DizilerdeVeriselPerformans\12.DizilerdeVeriselPerformans.csproj", "{41FB417B-4A4D-476C-93BE-A14F9547E93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Düzenliİfadeler", "Düzenliİfadeler\13.Düzenliİfadeler.csproj", "{8269223C-697D-4041-A551-8B09FC3CC95D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{41FB417B-4A4D-476C-93BE-A14F9547E93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41FB417B-4A4D-476C-93BE-A14F9547E93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41FB417B-4A4D-476C-93BE-A14F9547E93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8269223C-697D-4041-A551-8B09FC3CC95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8269223C-697D-4041-A551-8B09FC3CC95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8269223C-697D-4041-A551-8B09FC3CC95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8269223C-697D-4041-A551-8B09FC3CC95D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
