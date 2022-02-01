@@ -37,11 +37,20 @@ namespace Koleksiyonlar
             int toplam = 0;
             for (int i = 0; i < _yaslar.Count; i++)
             {
-                toplam += (int)_yaslar[i];
+                if (_yaslar[i] is int)
+                {
+                    toplam += (int)_yaslar[i];
+                }
             }
             #endregion
             #region ArrayList Collection Initializers(Koleksiyon İlklendirici) İle Değer Ekleme
-
+            ArrayList arrayList = new ArrayList()
+            {
+                "Emre",
+                21,
+                'e',
+                true
+            };
             #endregion
         }
     }
