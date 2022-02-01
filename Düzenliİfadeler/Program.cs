@@ -100,6 +100,19 @@ namespace Düzenliİfadeler
             //Match match = regex.Match(text);
             //Console.WriteLine(match.Success);
             #endregion
+            #region [n] Operatörü
+            //[n] : Karakter aralığı belirtilebilir
+            //Ayrıca özel karakterlerin yerinde yazılmasınıda ifade eder
+            //\d{3}[A-E]
+
+            //(546) 873 65 21 ----> Böyle bir numara verilmesini istersek
+            //[(]\d{3}[)]\s\d{3}\s\d{2}\s\d{2}
+            string text = "(546) 873 65 21";
+            Regex regex = new Regex(@"\d{3}[A-E]"); 
+            Regex regex2 = new Regex(@"[(]\d{3}[)]\s\d{3}\s\d{2}\s\d{2}"); 
+            Match match = regex2.Match(text);
+            Console.WriteLine(match.Success);
+            #endregion
             #endregion
         }
     }
