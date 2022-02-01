@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Primitives;
 using System;
+using System.Text;
 
 namespace DizilerdeVeriselPerformans
 {
@@ -39,11 +40,20 @@ namespace DizilerdeVeriselPerformans
             #region StringSegment İle Dizinin Belli Bir Alanını Referans Etmek
             //StringSegment türünü kullanabilmek için uygulama Microsoft.Extension.Primitives paketinin yüklenmesi gerekmektedir.
             StringSegment stringSegment = new StringSegment(text);
-            StringSegment stringSegment1 = new StringSegment(text,2,5); //L işe başlıcak ,'e kadar
+            StringSegment stringSegment1 = new StringSegment(text, 2, 5); //L işe başlıcak ,'e kadar
             Console.WriteLine(stringSegment1);
             #endregion
-            #region MyRegion
+            #region StringBuilder Sınıfı
+            string isim = "Emre";
+            string soyİsim = "Gündoğdu";
+            Console.WriteLine(isim + soyİsim);
+            //StringBuilder, string birleştirme operasyonlarında + operatörüne nazaran yüksek maliyeti absorbe edebilmek için arkaplanda StringSegment algoritmasını kullanan ve bu algoritma ile bialere ilgili değerleri olabilecek en az maliyetle birleştirip döndüren bir Sınıftır
 
+            StringBuilder builder = new StringBuilder();
+            builder.Append(isim);
+            builder.Append(" ");
+            builder.Append(soyİsim);
+            Console.WriteLine(builder.ToString());
             #endregion
         }
     }
