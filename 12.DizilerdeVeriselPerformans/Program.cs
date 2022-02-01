@@ -23,6 +23,13 @@ namespace DizilerdeVeriselPerformans
             segment1[0] *= 10;
             segment2[0] *= 10;
             #endregion
+            #region ArraySegment Slicing(Dilimleme)
+            //Bir dizi üzerinde birden fazla parçada çalışacaksan eğer herbir parçayı ayrı bir ArraySegment olarak tanımlayabiliriz. Bu tanımlamaların dışında diziyi tek bir arraysegment ile referans edip ilgili parçaları o segment üzerinden talep edebiliriz. Yani ilgili diziyi tek bir segment üzerinden daha rahat bir şekilde parçalayabiliriz. Bu durumda bize yazılımsal açıdan efektiflik kazandırmış olacaktır.
+            ArraySegment<int> segment = new ArraySegment<int>(sayilar, 2, 5);
+            ArraySegment<int> segment3 = segment.Slice(0, 3);
+            ArraySegment<int> segment4 = segment.Slice(4, 7);
+            ArraySegment<int> segment5 = segment.Slice(5, 10);
+            #endregion
         }
     }
 }
