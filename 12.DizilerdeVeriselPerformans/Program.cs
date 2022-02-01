@@ -30,6 +30,11 @@ namespace DizilerdeVeriselPerformans
             ArraySegment<int> segment4 = segment.Slice(4, 7);
             ArraySegment<int> segment5 = segment.Slice(5, 10);
             #endregion
+            #region StringSegment Nedir?
+            //StringSegment, ArraySegment'in string değerler nezdindeki bir muadildir.
+            //Esasında metinsel değerlerdi birçok analitik operasyonlardan bizleri kurtarmakta ve Substring vs. gibi fonksiyonlar yerine string değerde hedef kesit üzerinde işlem yapmamızı sağlayan bir türdür.
+            string text = "Hallo, wir sind da";
+            #endregion
         }
     }
 }
