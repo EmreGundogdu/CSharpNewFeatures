@@ -276,7 +276,7 @@ Fiyat : {fiyat}";
             Console.WriteLine(adet);
             #endregion
             #region 3. Örnek 
-            //Girilen metindekş kelimenin sayısını hesaplayalım
+            //Girilen metindeki kelimenin sayısını hesaplayalım
             Console.WriteLine("Lütfen bir metin giriniz");
             string metin9 = Console.ReadLine();
             #region 1. Çözüm
