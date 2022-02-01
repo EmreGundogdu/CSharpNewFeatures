@@ -16,7 +16,32 @@ namespace Koleksiyonlar
             ArrayList _yaslar = new ArrayList();
             #endregion
             #region Tanımlanmış Koleksiyona Değer Atama
-            _yaslar.Add(21);
+            for (int i = 0; i < 15; i++)
+            {
+                yaslar[i] = i + 10;
+                _yaslar.Add(i + 10);
+            }
+            #endregion
+            #region Tanımlanmış Koleksiyondan Değer Okuma
+            //Diziler
+            Console.WriteLine(yaslar[5]);
+
+            //Koleksiyonlar
+            Console.WriteLine(_yaslar[5]);
+            #endregion
+            #region ArrayList Kullanırken Boxing - Unboxing Durumları
+            //ArrayList, verilen datayı boxing işlemine tabi tutar.
+            //ArrayList içerisindeki herhangi bir veriyi talep ettiğimizde o veri object olarak gelecektir. Dolayısıyla kendi türünde işlem yapabilmek için unboxing işlemine tabi tutmamız gerekir.
+            //Koleksiyonlarda dizinin eleman sayısını getirirken count kullanmamız gerekir. Length propetysi dizilerde kullanılır
+
+            int toplam = 0;
+            for (int i = 0; i < _yaslar.Count; i++)
+            {
+                toplam += (int)_yaslar[i];
+            }
+            #endregion
+            #region ArrayList Collection Initializers(Koleksiyon İlklendirici) İle Değer Ekleme
+
             #endregion
         }
     }
