@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.DizilerdeVeriselPerforma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Düzenliİfadeler", "Düzenliİfadeler\13.Düzenliİfadeler.csproj", "{8269223C-697D-4041-A551-8B09FC3CC95D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Koleksiyonlar", "Koleksiyonlar\14.Koleksiyonlar.csproj", "{7AA95DF0-A17B-482C-941B-6E5326E20057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8269223C-697D-4041-A551-8B09FC3CC95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8269223C-697D-4041-A551-8B09FC3CC95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8269223C-697D-4041-A551-8B09FC3CC95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA95DF0-A17B-482C-941B-6E5326E20057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA95DF0-A17B-482C-941B-6E5326E20057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA95DF0-A17B-482C-941B-6E5326E20057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA95DF0-A17B-482C-941B-6E5326E20057}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
