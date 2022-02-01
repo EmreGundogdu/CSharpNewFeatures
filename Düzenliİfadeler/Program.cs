@@ -8,6 +8,8 @@ namespace Düzenliİfadeler
         static void Main(string[] args)
         {
             #region Regular Expressions Operators
+            //BÜYÜK OPERATOR KARAKTERKLERİ - OLUMSUZLUK İFADE EDER
+            //KUCUK OPERATOR KARAKTERKLERİ - OLUMLU İFADE EDER
             #region ^ Opeartörü
             //^ Operatörü : Satır başının istenilen ifadeyle başlamasını sağlar.
 
@@ -82,10 +84,21 @@ namespace Düzenliİfadeler
             #endregion
             #region . Operatörü
             //\n : Kullanıldığı yerde  \n karkateri dışında herhangi bir karkater bulunabilir
-            string text = "123eA";
-            Regex regex = new Regex(@"\d{3}.A"); //ilk 3 sayı olucak sonra herhangi bir karakter gelebilir ve sonra A değeri gelicek
-            Match match = regex.Match(text);
-            Console.WriteLine(match.Success);
+
+            //string text = "123eA";
+            //Regex regex = new Regex(@"\d{3}.A"); //ilk 3 sayı olucak sonra herhangi bir karakter gelebilir ve sonra A değeri gelicek
+            //Match match = regex.Match(text);
+            //Console.WriteLine(match.Success);
+            #endregion
+            #region \b \B Operatörleri
+            //\B : Bu ifade ile kelimenin başında ya da sonunda olmaması gereken karakterler bildirilir
+            //\b : Bu ifade ilgili kelimenin belirtilen karakter dizisi ole sonlanmasını sağlar
+            //\d{3}dır\B ==> 123dır olmamalı, dır123 olmamalı, 123dır2 olabilir
+
+            //string text = "123dır2"; 
+            //Regex regex = new Regex(@"\d{3}dır\B"); //ilk 3 karater 0-9 arası olmalı sonra dır gelmeli
+            //Match match = regex.Match(text);
+            //Console.WriteLine(match.Success);
             #endregion
             #endregion
         }
