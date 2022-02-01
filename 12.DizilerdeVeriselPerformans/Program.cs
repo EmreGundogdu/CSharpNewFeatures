@@ -9,6 +9,7 @@ namespace DizilerdeVeriselPerformans
         static void Main(string[] args)
         {
             int[] sayilar = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+            string text = "Hallo, wir sind da";
             //int[] sayilar2 = sayilar[2..7];
             //sayilar2[0] *= 10;
             //sayilar2[1] *= 10;
@@ -35,7 +36,7 @@ namespace DizilerdeVeriselPerformans
             #region StringSegment Nedir?
             //StringSegment, ArraySegment'in string değerler nezdindeki bir muadildir.
             //Esasında metinsel değerlerdi birçok analitik operasyonlardan bizleri kurtarmakta ve Substring vs. gibi fonksiyonlar yerine string değerde hedef kesit üzerinde işlem yapmamızı sağlayan bir türdür.
-            string text = "Hallo, wir sind da";
+
             #endregion
             #region StringSegment İle Dizinin Belli Bir Alanını Referans Etmek
             //StringSegment türünü kullanabilmek için uygulama Microsoft.Extension.Primitives paketinin yüklenmesi gerekmektedir.
@@ -54,6 +55,16 @@ namespace DizilerdeVeriselPerformans
             builder.Append(" ");
             builder.Append(soyİsim);
             Console.WriteLine(builder.ToString());
+            #endregion
+            #region Span Türü
+            Span<int> span = new Span<int>(sayilar);
+            Span<int> span2 = sayilar;
+            Span<int> span3 = new Span<int>(sayilar, 3, 5); //3. indesten sonra 5 tane al.
+            Span<int> span4 = sayilar.AsSpan();
+            Span<int> span5 = sayilar.AsSpan(3, 5);
+
+            ReadOnlySpan<char> readOnlySpan = text.AsSpan();
+            ReadOnlySpan<char> span6 = text;
             #endregion
         }
     }
