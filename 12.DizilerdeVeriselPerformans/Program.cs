@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Primitives;
+using System;
 
 namespace DizilerdeVeriselPerformans
 {
@@ -27,13 +28,22 @@ namespace DizilerdeVeriselPerformans
             //Bir dizi üzerinde birden fazla parçada çalışacaksan eğer herbir parçayı ayrı bir ArraySegment olarak tanımlayabiliriz. Bu tanımlamaların dışında diziyi tek bir arraysegment ile referans edip ilgili parçaları o segment üzerinden talep edebiliriz. Yani ilgili diziyi tek bir segment üzerinden daha rahat bir şekilde parçalayabiliriz. Bu durumda bize yazılımsal açıdan efektiflik kazandırmış olacaktır.
             ArraySegment<int> segment = new ArraySegment<int>(sayilar, 2, 5);
             ArraySegment<int> segment3 = segment.Slice(0, 3);
-            ArraySegment<int> segment4 = segment.Slice(4, 7);
-            ArraySegment<int> segment5 = segment.Slice(5, 10);
+            ArraySegment<int> segment4 = segment.Slice(0, 3);
+            ArraySegment<int> segment5 = segment.Slice(0, 1);
             #endregion
             #region StringSegment Nedir?
             //StringSegment, ArraySegment'in string değerler nezdindeki bir muadildir.
             //Esasında metinsel değerlerdi birçok analitik operasyonlardan bizleri kurtarmakta ve Substring vs. gibi fonksiyonlar yerine string değerde hedef kesit üzerinde işlem yapmamızı sağlayan bir türdür.
             string text = "Hallo, wir sind da";
+            #endregion
+            #region StringSegment İle Dizinin Belli Bir Alanını Referans Etmek
+            //StringSegment türünü kullanabilmek için uygulama Microsoft.Extension.Primitives paketinin yüklenmesi gerekmektedir.
+            StringSegment stringSegment = new StringSegment(text);
+            StringSegment stringSegment1 = new StringSegment(text,2,5); //L işe başlıcak ,'e kadar
+            Console.WriteLine(stringSegment1);
+            #endregion
+            #region MyRegion
+
             #endregion
         }
     }
