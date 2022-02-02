@@ -4,34 +4,33 @@ namespace Metotlar
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            #region Örnek döngü
-            //int[] sayilar = new int[10];
-            //for (int i = 0; i < sayilar.Length; i++)
-            //{
-            //    sayilar[i] = new Random().Next();
-            //}
-            //foreach (var sayi in sayilar)
-            //{
-            //    Console.WriteLine(sayi);
-            //}
+            #region Metodun Geriye Değer Döndürmesi Ne Demektir
+            int sonuc = Topla(5, 8);
+            if (sonuc > 10)
+                Console.WriteLine("Sonuç 10'dan büyük");
+            bool sonuc2 = PersonelEkle("Emre", "Gndgd", 21);
             #endregion
-            //Metotlar class içerisinde oluşturulmalıdır.
-
-            //Metot Oluşturma
-            //erişim belirleyicisi   geri dönüş değeri   metodun adı()
-            //{
-            //}
-
-
-
-
         }
+        #region Örnek döngü
+        //int[] sayilar = new int[10];
+        //for (int i = 0; i < sayilar.Length; i++)
+        //{
+        //    sayilar[i] = new Random().Next();
+        //}
+        //foreach (var sayi in sayilar)
+        //{
+        //    Console.WriteLine(sayi);
+        //}
+        #endregion
+        //Metotlar class içerisinde oluşturulmalıdır.
 
-        //erişim belirleyici   geri dönüş değeri   metot adı()
+        //Metot Oluşturma
+        //erişim belirleyicisi   geri dönüş değeri   metodun adı()
+        //{
+        //}
 
-        //Dört Farklı Türde metot oluşturma;
 
         #region Geriye Değer Döndürmeyen, Parametre Almayan Metot
         private void Metot1()
@@ -79,5 +78,25 @@ namespace Metotlar
             return DateTime.Now.Year > 2000 ? 1 : 0;
         }
         #endregion
+
+        static int Topla(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 + sayi2;
+            return sonuc;
+        }
+
+        static public bool PersonelEkle(string adi, string soyadi, int yas)
+        {
+            if (yas >= 20)
+            {
+                //... Veritabanına eklendi
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Personel 20'den küçük olamaz!");
+                return false;
+            }
+        }
     }
 }
