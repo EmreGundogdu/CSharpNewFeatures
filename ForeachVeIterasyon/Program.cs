@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace ForeachVeIterasyon
 {
@@ -8,10 +9,10 @@ namespace ForeachVeIterasyon
         {
             #region Iterasyon - Döngü
             //Foreach(Iterasyon) BİR DÖNGÜ DEĞİLDİR
-            int[] sayilar = { 3, 123, 42, 63, 53, 123, 51, 23 };
-            for (int i = 0; i < sayilar.Length; i++)
+            ArrayList sayilar = new ArrayList { 3, 123, 42, 63, 53, 123, 51, 23 };
+            foreach (object item in sayilar)
             {
-
+                Console.WriteLine(item);
             }
             #endregion
         }
