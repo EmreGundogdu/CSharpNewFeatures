@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.Düzenliİfadeler", "Dü
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14.Koleksiyonlar", "Koleksiyonlar\14.Koleksiyonlar.csproj", "{7AA95DF0-A17B-482C-941B-6E5326E20057}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.ForeachVeIterasyon", "ForeachVeIterasyon\15.ForeachVeIterasyon.csproj", "{4A12B906-80E6-4607-985D-EB01D56F8498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15.ForeachVeIterasyon", "ForeachVeIterasyon\15.ForeachVeIterasyon.csproj", "{4A12B906-80E6-4607-985D-EB01D56F8498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.HazirKutuphaneler", "HazirKutuphaneler\16.HazirKutuphaneler.csproj", "{5A256293-8B65-48F0-A8E8-F7EAC395AEC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16.HazirKutuphaneler", "HazirKutuphaneler\16.HazirKutuphaneler.csproj", "{5A256293-8B65-48F0-A8E8-F7EAC395AEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.Metotlar", "Metotlar\17.Metotlar.csproj", "{8A086053-2B39-47DD-85B2-D6D7032D94E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{5A256293-8B65-48F0-A8E8-F7EAC395AEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A256293-8B65-48F0-A8E8-F7EAC395AEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A256293-8B65-48F0-A8E8-F7EAC395AEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A086053-2B39-47DD-85B2-D6D7032D94E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A086053-2B39-47DD-85B2-D6D7032D94E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A086053-2B39-47DD-85B2-D6D7032D94E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A086053-2B39-47DD-85B2-D6D7032D94E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
