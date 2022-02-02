@@ -17,6 +17,13 @@ namespace HazirKutuphaneler
             //Ondalıklı değeri tam sayıya dönüştürür. (Her zaman yukarıya yuvarlar)
             Console.WriteLine(Math.Ceiling(3.15)); //4'e yuvarlar
             #endregion
+            #region Floor
+            //Ondalıklı değeri tam sayıya dönüştürür. (Her zaman aşağıya yuvarlar)
+            Console.WriteLine(Math.Floor(3.15)); //3'e yuvarlar
+            #endregion
+            #region Round
+
+            #endregion
             #endregion
         }
     }
