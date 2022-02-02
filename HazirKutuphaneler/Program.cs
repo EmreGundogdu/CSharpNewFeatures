@@ -47,7 +47,24 @@ namespace HazirKutuphaneler
             Console.WriteLine(DateTime.Today);//sadece tarihi getirir.
             #endregion
             #region Compare
-            Console.WriteLine(DateTime.Compare());
+            DateTime tarih1 = new DateTime(2021, 06, 16);
+            DateTime tarih2 = new DateTime(2021, 07, 20);
+            int result = DateTime.Compare(tarih1, tarih2);
+            if (result < 0)
+            {
+                Console.WriteLine($"{tarih1} küçüktür {tarih2}");
+            }
+            else if (result == 0)
+            {
+                Console.WriteLine($"{tarih1} eşittir {tarih2}");
+            }
+            else
+            {
+                Console.WriteLine($"{tarih1} büyüktür {tarih2}");
+            }
+            #endregion
+            #region MyRegion
+
             #endregion
             #endregion
         }
