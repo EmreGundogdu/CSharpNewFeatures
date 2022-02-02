@@ -41,13 +41,24 @@ namespace Metotlar
         }
         #endregion
         #region Geriye Değer Döndürmeye, Parametre Alan Metot
-        private void Metot2(int a)
+        public void Metot2(int a)
+        {
+
+        }
+        public void Metot3(int a, bool b)
+        {
+
+        }
+        public void Metot4(int a, int b, char c)
         {
 
         }
         #endregion
         #region Geriye Değer Döndüren, Parametre Almayan Metot
+        private char Metot5()
+        {
 
+        }
         #endregion
         #region Geriye Değer Döndüren, Parametre Alan Metot
 
