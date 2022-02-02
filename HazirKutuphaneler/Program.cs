@@ -88,11 +88,11 @@ namespace HazirKutuphaneler
             Random random = new Random();
             #region Next Fonksiyonu
             Console.WriteLine(random.Next()); // 0'dan büyük değer üretir
-            Console.WriteLine(random.Next(100)); // 0-100 arası değer üretir
-            Console.WriteLine(random.Next(50,100)); // 0-100 arası değer üretir
+            Console.WriteLine(random.Next(100)); // 0-100 arası değer üretir(0 olabilir 100 olamaz)
+            Console.WriteLine(random.Next(50, 100)); // 0-100 arası değer üretir(50 olabilir 100 olamaz)
             #endregion
             #region NextDouble Fonksiyonu
-
+            Console.WriteLine(random.NextDouble());//0-1 arası rastgele değer üretir
             #endregion
             #endregion
         }
