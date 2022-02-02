@@ -24,9 +24,14 @@ namespace HazirKutuphaneler
             #region Round
             //Ondalıklı değerin en yakın tam sayıya yuvarlar
             Console.WriteLine(Math.Round(3.75)); //yukarı yuvarlıcak
+            Console.WriteLine(Math.Round(3.5)); //yukarı yuvarlıcak(yarımlar yukarı yuvarlar)
             Console.WriteLine(Math.Round(3.25)); //aşağıya yuvarlıcak
             #endregion
             #region Pow
+            //Üssü alma
+            Console.WriteLine(Math.Pow(3,2));//taban 3 üssü 2
+            #endregion
+            #region Sqrt
 
             #endregion
             #endregion
