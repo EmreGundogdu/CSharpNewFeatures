@@ -85,7 +85,15 @@ namespace HazirKutuphaneler
             Console.WriteLine(span.Minutes);
             #endregion
             #region Random Sınıfı
+            Random random = new Random();
+            #region Next Fonksiyonu
+            Console.WriteLine(random.Next()); // 0'dan büyük değer üretir
+            Console.WriteLine(random.Next(100)); // 0-100 arası değer üretir
+            Console.WriteLine(random.Next(50,100)); // 0-100 arası değer üretir
+            #endregion
+            #region NextDouble Fonksiyonu
 
+            #endregion
             #endregion
         }
     }
