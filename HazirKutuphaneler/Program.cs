@@ -63,9 +63,29 @@ namespace HazirKutuphaneler
                 Console.WriteLine($"{tarih1} büyüktür {tarih2}");
             }
             #endregion
-            #region MyRegion
+            #region AddDays
+            Console.WriteLine(DateTime.Now.AddDays(16));
+            #endregion
+            #region AddHours
+            Console.WriteLine(DateTime.Now.AddHours(100));
+            #endregion
+            #region AddMonth
+            Console.WriteLine(DateTime.Now.AddMonths(20));
+            #endregion
+            #region AddYears
+            Console.WriteLine(DateTime.Now.AddYears(10));
+            #endregion
 
             #endregion
+            #region TimeSpan Struct'ı
+            DateTime t1 = DateTime.Now;
+            DateTime t2 = new DateTime(2000, 1, 1);
+            TimeSpan span = t1 - t2;
+            Console.WriteLine(span.Days);
+            Console.WriteLine(span.Minutes);
+            #endregion
+            #region Random Sınıfı
+
             #endregion
         }
     }
