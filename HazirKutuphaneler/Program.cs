@@ -29,10 +29,25 @@ namespace HazirKutuphaneler
             #endregion
             #region Pow
             //Üssü alma
-            Console.WriteLine(Math.Pow(3,2));//taban 3 üssü 2
+            Console.WriteLine(Math.Pow(3, 2));//taban 3 üssü 2
             #endregion
             #region Sqrt
-
+            //Karekök
+            Console.WriteLine(Math.Sqrt(16)); //16'nın karekökü 4'tür
+            #endregion
+            #region Truncate
+            Console.WriteLine(Math.Truncate(3.14));
+            #endregion
+            #endregion
+            #region DateTime Strcut'ı
+            #region Now
+            Console.WriteLine(DateTime.Now);//tarih saat ve saniyeye kadar getirir
+            #endregion
+            #region Today
+            Console.WriteLine(DateTime.Today);//sadece tarihi getirir.
+            #endregion
+            #region Compare
+            Console.WriteLine(DateTime.Compare());
             #endregion
             #endregion
         }
