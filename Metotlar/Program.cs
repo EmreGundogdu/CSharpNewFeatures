@@ -52,7 +52,20 @@ namespace Metotlar
             #region Local Functions Amacı
             //Local function, sadece tek bir metotta tekrarlı bir şekilde kullanılacak bir algoritmayı/kod parçacığını/işlemi o metoda özel bir şekilde tek seferlik tanımlamızı ve kullanmamızı sağlamaktadır.
             #endregion
+            #region Local Funtion Muadilleri
+            //Anonim functions, Delegete functions, Func functions
+            #endregion
             Local();
+        }
+        public void S(int a)
+        {
+            int b = 0;
+            static void X(int a, int b)
+            {
+                Console.WriteLine(a); //metoda static ekleyince X metodunu parametrelerini kullanırız. 
+                Console.WriteLine(b); //metoda static ekleyince X metodunu parametrelerini kullanırız. 
+            }
+            X(a, b);
         }
         public static int Local()
         {
