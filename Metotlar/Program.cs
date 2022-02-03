@@ -142,7 +142,15 @@ namespace Metotlar
             }
             #region TryParse
             string s = "1234";
-            int r = int.Parse(s);
+            if (int.TryParse(s, out int r)) //s eğer int olabiliyorsa/hedef türe dönebiliyorsa r'ye değeri dönüştürüp değeri döndürür.
+            {
+
+            }
+            else
+            {
+
+            }
+
             #endregion
             #endregion
             Local();
