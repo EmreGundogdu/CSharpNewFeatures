@@ -77,6 +77,38 @@ namespace Metotlar
             //Öngürülemeyen, derinliği tahmin edilemeyen, sonu bilinmeyen durumlarda terchil edilebilir. 
             //Dçngülerin kullanıldığı her noktada recursive fonksiyonları kullanabiliriz. Amma velakin, recursive fonksiyonlar kullanıldığı her yerde de döngü KULLANILAMAZ!
             #endregion
+            #region Ref Keywordü
+            //ref keywordü, referansdan gelmektedir.
+            //Referans, OOP kavramıdır
+            //OOP'da nesneler(obejct) RAM'de Heap bölgesinde tutulmaktadır.
+            //OOP'da referamslar = operatörü ile iletişime geçebilmektedirler. Bir referams, işaretlediği herhangi bir nesneyi = operatörü sayesinde farklı bir referansa işaretletebilir.
+            //Yani, refereanslar da = operatörü neticesinde herhangi bir neticelsel/nesnesel türeme söz konusu olmamakta, işaretlemiş nesne diğer referans tarafından işaretlemektedir.
+            //Değer türlü değişkenlerde referans çalışması yapmak istiyorsak eğer ref keywordü kullanılır
+            //ref keywordü, değer türlü değişkenlerin referans türlü değişkenler gibi çalışmasını sağlayan bir komuttur
+            //Değer türlü değişkenlerde shalllow copy yapmamızı sağlayan bir keyworddür
+            #region Örnek 1
+            int a = 5;
+            ref int b = ref a;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            a *= 5;
+            Console.WriteLine(b);
+            b -= 10;
+            Console.WriteLine(a);
+            #endregion
+            #region Örnek 2
+            int y = 10;
+            R(ref y);
+            Console.WriteLine(y);
+            void R(ref int a)
+            {
+                a = 25;
+            }
+            #endregion
+            #endregion
+            #region Ref Return
+
+            #endregion
             Local();
         }
         void RecursiveMethod()
