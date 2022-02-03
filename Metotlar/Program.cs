@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace Metotlar
 {
@@ -90,7 +93,21 @@ namespace Metotlar
             }
             #endregion
             #region 2. Örnek
-            //
+            List<FileInfo> files = DosyaYazdir("Dosya yolu(c:users/emre/...)");
+            foreach (var file in files)
+                Console.WriteLine(file.FullName);
+            List<FileInfo> DosyaYazdir(string path)
+            {
+                List<FileInfo> fileInfos = new();
+                DirectoryInfo directoryInfo = new(path);
+                DirectoryInfo[] directoryInfos = directoryInfo.GetDirectories();
+                if (directoryInfos.Any())
+                    foreach (DirectoryInfo directory in directoryInfos)
+                        fileInfos.AddRange(DosyaYazdir(directory.FullName));
+                else
+                    fileInfos.AddRange(directoryInfo.GetFiles());
+                return fileInfos;
+            }
             #endregion
         }
 
