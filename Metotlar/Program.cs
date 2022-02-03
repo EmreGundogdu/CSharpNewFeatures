@@ -52,10 +52,42 @@ namespace Metotlar
             #region Local Functions Amacı
             //Local function, sadece tek bir metotta tekrarlı bir şekilde kullanılacak bir algoritmayı/kod parçacığını/işlemi o metoda özel bir şekilde tek seferlik tanımlamızı ve kullanmamızı sağlamaktadır.
             #endregion
-            #region Local Funtion Muadilleri
+            #region Local Funtion Muadilleri(Eş anlamlıları)
             //Anonim functions, Delegete functions, Func functions
             #endregion
+            #region Method Overloading(Çoklü Yükleme)
+            //Overloading: Çoklu Yükleme
+            //Bir class içerisinde belirli kurallar çerçevesinde aynı isimde birden fazla metot oluşturmaya Method Overloading denir.
+            #endregion
+            #region Overloading Kuralları
+            //Bir sınıf içerisinde birden fazla aynı isimde metot tanımlayabilmek için şu kurallara dikkat edilmesi gerekir.
+            //Metot overloading işlemini yapabilmek için metotların isimleri aynı olmalıdır
+            //Bu metotlar içerisinde fark yaratmamız gerekir.
+            //Bu fark bizzat metot imzalarında OLMALIDIR
+            //Metotlar arasında farkı yaratırken erişim belirleyicileri ve geri dönüş değerleri aktif rol oynamaktadır.
+            //Parametre sayıları ya da parametre türleri farklı olmalıdır.
+            #endregion
+            #region Recursive Fonksiyon 
+            //Kendi içerisinde kendisini çağıran/tetikleyen fonksiyonlardır.
+            //Özyinelemeli/Tekrarlamalı Fonksiyonlar denebilir.
+            //Recursive fonksiyonlar bir yaklaşımdır!
+            //Öngürülemeyen, derinliği tahmin edilemeyen, sonu bilinmeyen durumlarda terchil edilebilir. 
+            //Dçngülerin kullanıldığı her noktada recursive fonksiyonları kullanabiliriz. Amma velakin, recursive fonksiyonlar kullanıldığı her yerde de döngü KULLANILAMAZ!
+            #endregion
             Local();
+        }
+        void Recursive(int a)
+        {
+            Console.WriteLine("Recursive Metod");
+            if (a < 3)
+            {
+                Recursive(++a);//Kendini tekrarlayan metod
+            }
+            Console.WriteLine("Derinlik Sonu ve Derinlikten dönüş");
+        }
+        public void S(int a, int b)
+        {
+
         }
         public void S(int a)
         {
@@ -201,7 +233,6 @@ namespace Metotlar
     }
     class Matematik
     {
-
         public int Topla(int sayi1, int sayi2)
         {
             return sayi1 + sayi2;
