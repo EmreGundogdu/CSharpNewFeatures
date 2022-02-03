@@ -76,15 +76,24 @@ namespace Metotlar
             #endregion
             Local();
         }
-        void Recursive(int a)
+        void RecursiveMethod()
         {
-            Console.WriteLine("Recursive Metod");
-            if (a < 3)
+            //Belirli değer aralığındaki 5'in katı olan tüm sayıları toplayan RECURSIVE fonksiyonu yazalım
+            #region 1. Örnek
+            int RecursiveTopla(int baslangic, int bitis)
             {
-                Recursive(++a);//Kendini tekrarlayan metod
+                if (baslangic % 5 == 0)
+                    return baslangic + RecursiveTopla(++baslangic, bitis);
+                if (baslangic < bitis)
+                    return RecursiveTopla(++baslangic, bitis);
+                return 0;
             }
-            Console.WriteLine("Derinlik Sonu ve Derinlikten dönüş");
+            #endregion
+            #region 2. Örnek
+            //
+            #endregion
         }
+
         public void S(int a, int b)
         {
 
