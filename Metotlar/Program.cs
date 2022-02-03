@@ -14,6 +14,13 @@ namespace Metotlar
             #endregion
             X(5, 10, 15);
             Y();
+            #region Başka Sınıfta Tanımlanmış Bir Metodun Kullanımı
+            Matematik matematik = new Matematik(); //Class isimli bir değişken ise bu referans'tır.
+            Console.WriteLine(matematik.Topla(5, 10));
+            Console.WriteLine(matematik.Carp(5, 10));
+            Console.WriteLine(matematik.Cikar(10, 5));
+            Console.WriteLine(matematik.Bol(10, 5));
+            #endregion
         }
         #region Örnek döngü
         //int[] sayilar = new int[10];
@@ -109,25 +116,43 @@ namespace Metotlar
         //Birden fazla parametre durumunda OPSİYONEL olanlar sağ tarafta TANIMLANMALIDIR!!!;
         #endregion
         #region Kritik 3
-
-        #endregion
         public static void X(int a, int x, int y, int b = 2, int c = 4)
         {
 
         }
+        #endregion
+
         #endregion
         #region Tanımlanmış Metodun Kullanılması
         //Tetikleme = Çağırma = Kullanım
         #region Tanımlandığı Sınıf İçerisinde Kullanımı
         //Bir metot tanımlandığı sınıf içerisindeki farklı bir metot içerisinden çağrılacaksa eğer tek yapılması gereken sadece isminin çağılrılmasıdır/tetiklenmesidir/çalıştırılmasıdır.        
         #endregion
-        #region Başka Sınıflarda Kullanımı
-
-        #endregion
         #endregion
         public static void Y()
         {
 
+        }
+
+    }
+    class Matematik
+    {
+
+        public int Topla(int sayi1, int sayi2)
+        {
+            return sayi1 + sayi2;
+        }
+        public int Cikar(int sayi1, int sayi2)
+        {
+            return sayi1 - sayi2;
+        }
+        public int Carp(int sayi1, int sayi2)
+        {
+            return sayi1 * sayi2;
+        }
+        public int Bol(int sayi1, int sayi2)
+        {
+            return sayi1 / sayi2;
         }
     }
     class Ornek
@@ -144,5 +169,6 @@ namespace Metotlar
         {
             return a;
         }
+
     }
 }
