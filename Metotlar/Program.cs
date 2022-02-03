@@ -36,13 +36,38 @@ namespace Metotlar
             //In Komutu, metodun parametresini readonly(Sadece okunabilir) hale getirir.
             //In komutunun kullanıldığı parametrelerde eğer ki metot içerisinde farklı bir assign durumu söz konusu olursa derleyici hatası verecektir.
             #endregion
+            #region Local Functions
+            //Bir metot içerisinde tanımlanmış olan metotlardır!
+            //C#'ta metotlar sade ve sadece class içerisinde tanımlanırlar diye söylemiştirk! Halbuki OOP'de göreceğimiz struct, abstract class, interface, record yapılarında da metotlar tanımlanmaktadır. Metotlar bu saydıklarımızın dışında KESİNLİKLE başka bir yerde tanımlanamaz
+            //Metotlar KESİNLİKLE metotların içerisinde tanımlamaz demiştik Halbuki C# 7.0'da gelen local function özelliği sayesinde metot içerisinde metot tanımlanabilmektedir.
+            #endregion
+            #region Local Functions Tanımalam Kuralları
+            //1. Erişim belirleyicisi(Access Modifier) yazılmaz!
+            //2. Local function olarak tanımlanan fonksiyon adı tanımladığı fonksiyonun adından farklı olmalıdır.! Alsi taktirde derleyici hatası vermez
+            #endregion
+            #region Local Functions Kullanım Kuralları
+            //- Bir local function sade ve sadece tanımlandığı metodun içerisinmde kullanılabilir.
+            //- Local function tanımlandığı metodun içerisinde her yerden erişilebilir.
+            #endregion
+            #region Local Functions Amacı
+            //
+            #endregion
+            Local();
+        }
+        public static int Local()
+        {
+            void Y()
+            {
+                Console.WriteLine("Merhaba");
+            }
+            Y();
+            return 0;
         }
         static void In(in int a, int b, in string c)//metot kullanıldığında a değişkeni bir değer alıcak ve bu değeri metotta değiştirme demek
         {
-            a = 123;//hata vericek çünkü In keywordü ile metot içerisinde a değişkenin değerini değiştirme durumu söz konusu olamaz
-            c = "Emre"; //hata verir
+            //a = 123; HATA vericek çünkü In keywordü ile metot içerisinde a değişkeninin değerini değiştirme durumu söz konusu olamaz
+            //c = "Emre"; HATA verir
             b = 50; //hata vermez
-
         }
         static void T(int a, int b, string c)
         {
