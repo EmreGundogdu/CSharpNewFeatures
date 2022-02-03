@@ -21,6 +21,14 @@ namespace Metotlar
             Console.WriteLine(matematik.Cikar(10, 5));
             Console.WriteLine(matematik.Bol(10, 5));
             #endregion
+            #region Non-Trailing Named Arguments
+            T(3, 5, "abc");
+            T(c: "emre", a: 3, b: 5); //farklı sırayala değer ekleme
+            #endregion
+        }
+        static void T(int a, int b, string c)
+        {
+
         }
         #region Örnek döngü
         //int[] sayilar = new int[10];
