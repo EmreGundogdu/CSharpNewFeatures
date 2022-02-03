@@ -22,9 +22,27 @@ namespace Metotlar
             Console.WriteLine(matematik.Bol(10, 5));
             #endregion
             #region Non-Trailing Named Arguments
+            //Hangi parametreye hangi değerlerinde gönderildiğini direkt görebilmek için bu özelliği kullanırız.
+            //Göreceli bir şkeilde çok parametreli fonksiyonlarda hedef parametrelere değer göndermemizi sağlayan bir özelliktir.
             T(3, 5, "abc");
             T(c: "emre", a: 3, b: 5); //farklı sırayala değer ekleme
             #endregion
+            #region In Parameters
+            //PARAMETRE ÖZELLİKLERİ:
+            //1. Parametre değerini metodun içerisinde herhangibir yerde çağırıp kullanabiliri.z
+            //2. Metot içerisinde üretilen herhangi bir değeri tutacak değişken oluşturmaktansa parametre üzerinde bu değeri tutabiliriz. Yani parametrenin değerini değiştirebiliriz(Çünkü parametreler özünde bir değişkendir)
+
+            //IN KOMUTU SAYESİNDE parametreye verilen değeri sabit tutabilmekteyiz.
+            //In Komutu, metodun parametresini readonly(Sadece okunabilir) hale getirir.
+            //In komutunun kullanıldığı parametrelerde eğer ki metot içerisinde farklı bir assign durumu söz konusu olursa derleyici hatası verecektir.
+            #endregion
+        }
+        static void In(in int a, int b, in string c)//metot kullanıldığında a değişkeni bir değer alıcak ve bu değeri metotta değiştirme demek
+        {
+            a = 123;//hata vericek çünkü In keywordü ile metot içerisinde a değişkenin değerini değiştirme durumu söz konusu olamaz
+            c = "Emre"; //hata verir
+            b = 50; //hata vermez
+
         }
         static void T(int a, int b, string c)
         {
