@@ -13,6 +13,7 @@ namespace Metotlar
             bool sonuc2 = PersonelEkle("Emre", "Gndgd", 21);
             #endregion
             X(5, 10, 15);
+            Y();
         }
         #region Örnek döngü
         //int[] sayilar = new int[10];
@@ -116,8 +117,32 @@ namespace Metotlar
         }
         #endregion
         #region Tanımlanmış Metodun Kullanılması
+        //Tetikleme = Çağırma = Kullanım
+        #region Tanımlandığı Sınıf İçerisinde Kullanımı
+        //Bir metot tanımlandığı sınıf içerisindeki farklı bir metot içerisinden çağrılacaksa eğer tek yapılması gereken sadece isminin çağılrılmasıdır/tetiklenmesidir/çalıştırılmasıdır.        
+        #endregion
+        #region Başka Sınıflarda Kullanımı
 
         #endregion
+        #endregion
+        public static void Y()
+        {
 
+        }
+    }
+    class Ornek
+    {
+        public void A()
+        {
+            B();
+        }
+        private void B()
+        {
+            C(5);
+        }
+        private int C(int a)
+        {
+            return a;
+        }
     }
 }
