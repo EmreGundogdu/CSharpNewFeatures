@@ -50,7 +50,7 @@ namespace Metotlar
             //- Local function tanımlandığı metodun içerisinde her yerden erişilebilir.
             #endregion
             #region Local Functions Amacı
-            //
+            //Local function, sadece tek bir metotta tekrarlı bir şekilde kullanılacak bir algoritmayı/kod parçacığını/işlemi o metoda özel bir şekilde tek seferlik tanımlamızı ve kullanmamızı sağlamaktadır.
             #endregion
             Local();
         }
