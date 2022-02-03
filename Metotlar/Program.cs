@@ -120,6 +120,31 @@ namespace Metotlar
             }
             #endregion
             #endregion
+            #region Out Keyword
+            //Out keywordü metotların PARAMETRELERİ üzerinden dışarıya değer göndermemizi sağlayan bir keyworddür.
+            //Bir metodun parametreleri varsayılan oalrak INPUT'tur. Haliyle metotlarda tanımlanmış parametreler direkt olarak içeriye değer almaya odaklanırlar... Eğer ki bir metodun parametresi dışarıya değer çıkaracaksa o parametrenin out keywordü isaretlenmesi gerekmektedir.
+            //Doğal parametreler inputtur.
+            //Output parametre barındıran bir metodu kullanırken, out parametrelerden gelecek olan değerleri karşılayacak değişkenler tanımlanmalıdır
+            #region Kullanım 1
+            //int _B = 0;
+            //string _d = "";
+            //int a3 = O(out _B, 123, out _d);
+            #endregion
+            #region Kullanım 2
+            int a3 = O(out int _b, 123, out string _d);  //1. kullanımdaki gibi değişkenleri tanımalaya gerek kalmadan parametreleri direk değersiz bir şekilde girebiliriz.
+            #endregion
+            int O(out int b, int c, out string d)
+            {
+                //Bir metot out parametreler barındırıyorsa o parametrelere kendi içerisinde değer atanması gerekmektedir. Aksi taktirde derleyici hata alınacaktır.
+                b = 25;
+                d = "Emre";
+                return 0;
+            }
+            #region TryParse
+            string s = "1234";
+            int r = int.Parse(s);
+            #endregion
+            #endregion
             Local();
         }
         void RecursiveMethod()
