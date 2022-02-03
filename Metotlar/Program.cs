@@ -12,6 +12,7 @@ namespace Metotlar
                 Console.WriteLine("Sonuç 10'dan büyük");
             bool sonuc2 = PersonelEkle("Emre", "Gndgd", 21);
             #endregion
+            X(5, 10, 15);
         }
         #region Örnek döngü
         //int[] sayilar = new int[10];
@@ -98,5 +99,25 @@ namespace Metotlar
                 return false;
             }
         }
+        #region Optional Parameters(İsteğe Bağlı Parametreler)
+        //Metot parametrelierne =(assign) operaötür ile bir değer atanırsa eğer o parametreye varsayılan değeri atanmış olur. Haliyle opsiyonel parametre haline getirilmiş olunur. 
+        #region Kritik 1
+        //Tüm parametreler opsiyonel olabilir
+        #endregion
+        #region Kritik 2 
+        //Birden fazla parametre durumunda OPSİYONEL olanlar sağ tarafta TANIMLANMALIDIR!!!;
+        #endregion
+        #region Kritik 3
+
+        #endregion
+        public static void X(int a, int x, int y, int b = 2, int c = 4)
+        {
+
+        }
+        #endregion
+        #region Tanımlanmış Metodun Kullanılması
+
+        #endregion
+
     }
 }
