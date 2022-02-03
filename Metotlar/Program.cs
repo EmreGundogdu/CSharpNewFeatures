@@ -110,13 +110,13 @@ namespace Metotlar
             //Ref returns özelliği sadece metotlarda geçerlidir.
             //Metotlar geriye değer döndürebilen yapılardır. Ayrıca metotlarda geriye nesnelerde döndürebilmekteyiz. Ayrıca ref return özelliği sayesinde değer türlü değişkenlerin referasnlarında geriye döndürebilmekteyiz.
             #region Örnek 1
-            int a2 = 5;
-            int b2 = Returns(ref a2);
+            int a2 = 5; //25 değeri geldir
+            int b2 = Returns(ref a2); //4)y'nin referansı b2'ye gelmiş oldu ||| 25 değeri gelmiş olur
             Console.WriteLine(a2);
-            ref int Returns(ref int y)
+            ref int Returns(ref int y) //-> 1)y parametresine a2 referansı geldi(kendisi)
             {
-                y = 25;
-                return ref y;
+                y = 25; //->2)y a2 demek oldu yani | a2 değeri ve y değeri 25 oldu
+                return ref y;  //3)y'nin kendisi yani referansını döndürdük
             }
             #endregion
             #endregion
