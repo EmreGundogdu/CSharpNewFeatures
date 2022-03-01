@@ -47,15 +47,15 @@ namespace Sabitler
             Console.WriteLine((int)y * 5);//unboxing - objecti inte cast ederek unboxing yapmış olduk
             #endregion
             #region Var keywordu
-            //var keywordu bi iken object ise bir türdür. Var atanan değerin türüne bürünür. Object atanan değeri boxing yaparak object türüne dönüştürür
+            //var bir keyword iken object ise bir türdür. Var atanan değerin türüne bürünür. Object atanan değeri boxing yaparak object türüne dönüştürür
             //var ile değişken tanımlarken değeri belirtmek zorunludur.
             #endregion
             #region dynamic keywordu
             dynamic x = 5;
-            Console.WriteLine(x * 5); //proje çalıştığında sonuç int olucaksa bunu hesaplıcak ama x'in dğerini string vermiş olsaydık proje çalıştıktan sonra hata vericekti. 
+            Console.WriteLine(x * 5); //proje çalıştığında sonuç int olucaksa bunu hesaplıcak ama x'in değerini string vermiş olsaydık proje çalıştıktan sonra hata vericekti. 
             //Çünkü proje çalıştıktan sonra tipi string olucaktı ve int ile çarpımı mümkün olmuyacaktı
             //proje çalışana kadar bunun tipi dynamic olarak kalır 
-            //dynamıc 
+            //dynamic 
             #endregion
         }
     }

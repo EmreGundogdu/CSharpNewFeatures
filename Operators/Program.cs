@@ -300,7 +300,7 @@ namespace Operators
             #region ??=(Null-Coalesing Assigment)Operatörü
             string g = null;
             Console.WriteLine(g ??= "Merhaba"); //g'in değeri null ise merhaba yazdır ve merhaba değerini g'ye ata
-            //null değil ise g'nin değerini yazdırrırs
+            //null değil ise g'nin değerini yazdırır
 
             //int? id = null;
             //id ??= 1; id değeri null ise 1 değerini ata, yok eğer değilse değerini koru

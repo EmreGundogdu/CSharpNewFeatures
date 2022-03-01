@@ -89,7 +89,7 @@ namespace TypeConversion
             #endregion
             #region bool sayısala dönüştürme
             bool q = true;
-            short w = Convert.ToInt16(q); //1 değeri gelir true olduğu için- false olsaydı 0 sonucu olurdu
+            short w = Convert.ToInt16(q); //1 değeri gelir true olduğu için - false olsaydı 0 sonucu olurdu
             Console.WriteLine(q);
             //  mantıksal değeri herhangi bir sayısal değere convert edersek ilgili değerin sayısal değeri verilir
             #endregion
