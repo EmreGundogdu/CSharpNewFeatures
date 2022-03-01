@@ -43,7 +43,7 @@ namespace Operators
             // < (küçüklük) - soldaki sağdakinden küçük
             // > (büyüklük) - soldaki sağındakindne büyük
             // >= (küçük veya eşitlik) - soldaki sağdakinden küçü veya eşit
-            // <= (büyk veya eşit) - soldaki sağdakiden büyük veya eşit
+            // <= (büyük veya eşit) - soldaki sağdakiden büyük veya eşit
             // == (eşitlik)
             //Karşılaştırma operatorlerinin sonucu true yada falsedir
             #endregion
@@ -170,7 +170,7 @@ namespace Operators
             //Birden fazla şartlı Örnek
 
             int _yas = 25;
-            //Yaşı 25'den küçük olanlara A, 25 olanlara B, 25'den büyük olanlara C değeeri döndüren ternary operatörünü oluşturalım
+            //Yaşı 25'den küçük olanlara A, 25 olanlara B, 25'den büyük olanlara C değeri döndüren ternary operatörünü oluşturalım
             string _islemSonucu = _yas < 25 ? "A" : (_yas == 25 ? "B" : "C");
 
 
@@ -184,8 +184,8 @@ namespace Operators
             //string girilenSayi = Console.ReadLine(); Kullanıcının girdiği değeri strng olarak getiren/yakalayn bir komuttur.
             //int _deger = int.Parse(girilenSayi);
             int _deger = int.Parse(Console.ReadLine());
-            int _ornekSonuc = _deger < 3 ? _deger * 5 : 
-                (_deger > 3 && _deger < 9 ? _deger * 3 : 
+            int _ornekSonuc = _deger < 3 ? _deger * 5 :
+                (_deger > 3 && _deger < 9 ? _deger * 3 :
                 (_deger > 9 && _deger % 2 == 0) ? _deger * 10 :
                 (_deger % 2 == 1 ? _deger : -1));
             Console.WriteLine("Sonuc : " + _ornekSonuc);
@@ -196,7 +196,7 @@ namespace Operators
             //"Güneşli" ->"Bol bol D vitamini alır"
             //"kapalı" -> "Yağmur yağabilir"
             string havaDurumu = "Yağmurlu";
-            Console.WriteLine(havaDurumu == "Yağmurlu" ? "Şemsiyeni almalısın" :(havaDurumu == "Güneşli"? "Bol bol D vitamini alsın" : "Yağmur Yağabilir"));
+            Console.WriteLine(havaDurumu == "Yağmurlu" ? "Şemsiyeni almalısın" : (havaDurumu == "Güneşli" ? "Bol bol D vitamini alsın" : "Yağmur Yağabilir"));
             #endregion
             //Atama (assign) operatörü --- int a = 5;
             #region (Member Access - Üye Erişim) Operatörü (.)
