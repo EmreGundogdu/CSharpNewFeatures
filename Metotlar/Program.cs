@@ -32,7 +32,7 @@ namespace Metotlar
             #endregion
             #region In Parameters
             //PARAMETRE ÖZELLİKLERİ:
-            //1. Parametre değerini metodun içerisinde herhangibir yerde çağırıp kullanabiliri.z
+            //1. Parametre değerini metodun içerisinde herhangibir yerde çağırıp kullanabiliriz.
             //2. Metot içerisinde üretilen herhangi bir değeri tutacak değişken oluşturmaktansa parametre üzerinde bu değeri tutabiliriz. Yani parametrenin değerini değiştirebiliriz(Çünkü parametreler özünde bir değişkendir)
 
             //IN KOMUTU SAYESİNDE parametreye verilen değeri sabit tutabilmekteyiz.
@@ -46,7 +46,7 @@ namespace Metotlar
             #endregion
             #region Local Functions Tanımalam Kuralları
             //1. Erişim belirleyicisi(Access Modifier) yazılmaz!
-            //2. Local function olarak tanımlanan fonksiyon adı tanımladığı fonksiyonun adından farklı olmalıdır.! Alsi taktirde derleyici hatası vermez
+            //2. Local function olarak tanımlanan fonksiyon adı tanımladığı fonksiyonun adından farklı olmalıdır.! Aksi taktirde derleyici hatası vermez
             #endregion
             #region Local Functions Kullanım Kuralları
             //- Bir local function sade ve sadece tanımlandığı metodun içerisinmde kullanılabilir.
@@ -81,7 +81,7 @@ namespace Metotlar
             //ref keywordü, referansdan gelmektedir.
             //Referans, OOP kavramıdır
             //OOP'da nesneler(obejct) RAM'de Heap bölgesinde tutulmaktadır.
-            //OOP'da referamslar = operatörü ile iletişime geçebilmektedirler. Bir referams, işaretlediği herhangi bir nesneyi = operatörü sayesinde farklı bir referansa işaretletebilir.
+            //OOP'da referanslar = operatörü ile iletişime geçebilmektedirler. Bir referams, işaretlediği herhangi bir nesneyi = operatörü sayesinde farklı bir referansa işaretletebilir.
             //Yani, refereanslar da = operatörü neticesinde herhangi bir neticelsel/nesnesel türeme söz konusu olmamakta, işaretlemiş nesne diğer referans tarafından işaretlemektedir.
             //Değer türlü değişkenlerde referans çalışması yapmak istiyorsak eğer ref keywordü kullanılır
             //ref keywordü, değer türlü değişkenlerin referans türlü değişkenler gibi çalışmasını sağlayan bir komuttur
@@ -122,7 +122,7 @@ namespace Metotlar
             #endregion
             #region Out Keyword
             //Out keywordü metotların PARAMETRELERİ üzerinden dışarıya değer göndermemizi sağlayan bir keyworddür.
-            //Bir metodun parametreleri varsayılan oalrak INPUT'tur. Haliyle metotlarda tanımlanmış parametreler direkt olarak içeriye değer almaya odaklanırlar... Eğer ki bir metodun parametresi dışarıya değer çıkaracaksa o parametrenin out keywordü isaretlenmesi gerekmektedir.
+            //Bir metodun parametreleri varsayılan olarak INPUT'tur. Haliyle metotlarda tanımlanmış parametreler direkt olarak içeriye değer almaya odaklanırlar... Eğer ki bir metodun parametresi dışarıya değer çıkaracaksa o parametrenin out keywordü isaretlenmesi gerekmektedir.
             //Doğal parametreler inputtur.
             //Output parametre barındıran bir metodu kullanırken, out parametrelerden gelecek olan değerleri karşılayacak değişkenler tanımlanmalıdır
             #region Kullanım 1
