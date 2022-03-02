@@ -51,7 +51,7 @@ namespace Diziler
 
             #endregion
             #region Sınırlılıklar
-            //Dizilerde tanımlama yaparken eleman sayısının bildiirlmesi zorunluluğu bir sınırlılıktır
+            //Dizilerde tanımlama yaparken eleman sayısının bildirilmesi zorunluluğu bir sınırlılıktır
             //Diziler tanımlandığında kullansakta kullanmasakta bellekte belirtilen eleman sayısı kadar alan tahsisinde bulunurlar. Bu durumda bellek boyunda ekstradan maliyete sebep olacağı için bir sınırlılıktır.
             //Dizilerde eleman sayısının başta belirlenmesi durumunda, ihtiyaca binaen daha fazla değer atamak istediğimizde bu değerleri atayamacağımızdan ve dizinin aralığını genişletemeyeceğimizden dolayı bu durum bir sınırlılık olarak karşımıza çıkmaktadır.
             //Dizilerde elemanlara değer atarken indexeer operatörüyle çok haşır neşir olunmaktadır. Bu durumda bir sınırlılıktır.
@@ -85,10 +85,8 @@ namespace Diziler
             //Dizi olarak tanımlanan değişkenler Array sınıfından türetilmektedirler.
             //Dizilerde Array sınıfıdan gelen berlirli metotlar ve özellikler mevcuttur
 
-            int[] a = new int[5];//kendi türünde tutuyorsak indexer operatörü kullanılabilir. bu şeklde açlışıldığında ilgili diziye verisel müdahaleler operatif gerçekleştirilir. Bu format algoritmalarda tercih edilir indexer kullanılabilir olduğundan dolayı.
+            int[] a = new int[5];//kendi türünde tutuyorsak indexer operatörü kullanılabilir. bu şekilde çalışıldığında ilgili diziye verisel müdahaleler operatif gerçekleştirilir. Bu format algoritmalarda tercih edilir indexer kullanılabilir olduğundan dolayı.
             Array a2 = new int[5];//Array türünde tutuyorsak indexer operatörü kullanılamaz. Bu şekilde çalışılırken ise fonksiyonel çözümler getirilmektedir.
-
-
 
             #endregion
             #region Array Türünden Dizilere Değer Atama / Okuma
@@ -129,7 +127,7 @@ namespace Diziler
             //Elimizdeki bir dizinin verilerini bir başka diziye kopyalamamızı sağlayan bir fonksiyondur
             Array isimler5 = new[] { "Emre", "fatih", "serhat", "yaren" };
             string[] isimler6 = new string[isimler5.Length];
-            Array.Copy(isimler5, isimler6, 4);
+            Array.Copy(isimler5, isimler6, 4); //Kaynak Array Dizisi | Kopyalanacak Dizi | Kaç eleman kopyalanacak
             for (int i = 0; i < isimler6.Length; i++)
             {
                 Console.WriteLine(isimler6[i]);
@@ -236,7 +234,7 @@ namespace Diziler
             int[,] b = new int[3, 5];
             #endregion
             #region 2 Boyutludan Fazla Dizi Tanımalaması
-            //Iki dereceli'den fazla olan dizileri günlük haytta tahayyül etmek pek mümkün olmasada programatik olarak inşa edebilmekteyiz.
+            //Iki dereceli'den fazla olan dizileri günlük hayatta tahayyül etmek pek mümkün olmasada programatik olarak inşa edebilmekteyiz.
             int[,,,] c = new int[3, 4, 5, 6];
             #endregion
             #region Tanımlanmış Çok Boyutlu Diziye Değer Atama Ve Okuma
