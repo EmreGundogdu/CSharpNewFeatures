@@ -487,12 +487,12 @@ namespace AkisKontrolYapilandirilmalari
 
 
             //VAR PATTERN               
-            //var pattern'da ise l degiskeninin degeri ne olursa olsun var ile o2 ye atanacagından doalyı o2nin null olma ihtimali yoktur. Dolayısıyla o2'yi rahatca kullanabiliriz
+            //var pattern'da ise l degiskeninin degeri ne olursa olsun var ile o2 ye atanacagından dolayı o2nin null olma ihtimali yoktur. Dolayısıyla o2'yi rahatca kullanabiliriz
             bool result2 = l is var o2;//normal var derlemede türü belirler .//var pattern runtimede türü belirler
             Console.WriteLine(o2);
             #endregion
             #region Single Type Pattern
-            //Bir değişkenin içerisindeki değernin belirli bir türde olup olmadığını hızlı bir şekilde kontrol etmemizi sağlayan desendir.
+            //Bir değişkenin içerisindeki değerinin belirli bir türde olup olmadığını hızlı bir şekilde kontrol etmemizi sağlayan desendir.
             /*
              * object obj = new Person()
              * switch(obj)
